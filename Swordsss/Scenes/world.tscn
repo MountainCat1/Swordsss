@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://br1wr5fee8c58"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerInput.cs" id="1_rlvyf"]
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="2_xmidd"]
+[ext_resource type="Texture2D" uid="uid://c7c4vip5mgp7f" path="res://icon.svg" id="3_r7t5f"]
+[ext_resource type="SpriteFrames" uid="uid://bqj2t5nh240k8" path="res://Animations/Player.tres" id="4_1c1r8"]
+
+[node name="World" type="Node2D"]
+
+[node name="PlayerInput" type="Node2D" parent="."]
+script = ExtResource("1_rlvyf")
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource("2_xmidd")
+Speed = 600.0
+Texture2D = ExtResource("3_r7t5f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+texture_filter = 1
+position = Vector2(271, 149)
+scale = Vector2(6.875, 6.875)
+sprite_frames = ExtResource("4_1c1r8")
+autoplay = "default"
+frame = 6
+frame_progress = 0.433716
+speed_scale = 2.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+visible = false
+position = Vector2(586, 308)
+texture = ExtResource("3_r7t5f")

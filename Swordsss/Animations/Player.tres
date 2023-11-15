@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://bqj2t5nh240k8"]
+
+[ext_resource type="Texture2D" uid="uid://cttscqqkf5vbp" path="res://Animations/drakowalk-Sheet.png" id="1_gl1td"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bt5al"]
+atlas = ExtResource("1_gl1td")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfc8k"]
+atlas = ExtResource("1_gl1td")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0p5d6"]
+atlas = ExtResource("1_gl1td")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twixl"]
+atlas = ExtResource("1_gl1td")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8o3p"]
+atlas = ExtResource("1_gl1td")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyscj"]
+atlas = ExtResource("1_gl1td")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vky2j"]
+atlas = ExtResource("1_gl1td")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxux8"]
+atlas = ExtResource("1_gl1td")
+region = Rect2(112, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bt5al")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tfc8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0p5d6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_twixl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8o3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyscj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vky2j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bxux8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
