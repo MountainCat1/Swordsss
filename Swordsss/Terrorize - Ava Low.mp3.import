@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjsftaff7f76j"
+path="res://.godot/imported/Terrorize - Ava Low.mp3-72381566b26a583c6067e3e995cd0636.mp3str"
+
+[deps]
+
+source_file="res://Terrorize - Ava Low.mp3"
+dest_files=["res://.godot/imported/Terrorize - Ava Low.mp3-72381566b26a583c6067e3e995cd0636.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

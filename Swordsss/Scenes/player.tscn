@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://fuliev1f2tpk"]
+
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_qgpk1"]
+[ext_resource type="Texture2D" uid="uid://c7c4vip5mgp7f" path="res://icon.svg" id="2_s02ep"]
+[ext_resource type="SpriteFrames" uid="uid://bqj2t5nh240k8" path="res://Animations/Player.tres" id="3_54bxm"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_qgpk1")
+Speed = 600.0
+Texture2D = ExtResource("2_s02ep")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = ExtResource("3_54bxm")
+autoplay = "default"
+frame = 6
+frame_progress = 0.433716
+speed_scale = 2.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(586, 308)
+texture = ExtResource("2_s02ep")
