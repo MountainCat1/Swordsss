@@ -13,10 +13,9 @@
 
 [node name="Player" parent="." instance=ExtResource("2_dtkjc")]
 texture_filter = 1
-Speed = 200.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4.04, 4.04)
+zoom = Vector2(3, 3)
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2(128, -24)

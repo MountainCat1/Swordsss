@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Player : Node2D
+public partial class Player : CharacterBody2D
 {
     [Export] public float Speed { get; set; }
 
@@ -15,14 +15,15 @@ public partial class Player : Node2D
 
         var playerInput = PlayerInput.Instance;
         
-        playerInput.OnPlayerMove += OnPlayerMove;
+        playerInput.OnPlayerMovePhysics += OnPlayerMove;
     }
 
     private void OnPlayerMove(double delta, Vector2 move)
     {
-        var step = move * Speed * (float)delta;
-        Translate(step);
-
+        Velocity = move * Speed * (float)delta;
+        
+        MoveAndSlide();
+        
         if (move.X < 0)
             _animatedSprite2D.FlipH = true;
         else if(move.X > 0)

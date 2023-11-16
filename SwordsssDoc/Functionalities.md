@@ -5,9 +5,10 @@ Additional:
 - [x] Input
 - [x] Movement
 - [x] Player Sprite/Animations
-- [ ] Melee Attack
-	- [ ] Sprite
-	- [ ] Script
+- [x] Melee Attack
+	- [x] Sprite
+	- [x] Script
+- [ ] Pixel Perfect Camera
 - [ ] Range Attack
 	- [ ] Sprite
 	- [ ] Script

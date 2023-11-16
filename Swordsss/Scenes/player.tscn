@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://8xxfm4y6ir8k"]
+[gd_scene load_steps=7 format=3 uid="uid://8xxfm4y6ir8k"]
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_nim0h"]
 [ext_resource type="SpriteFrames" uid="uid://b5kigquy33m1l" path="res://Sprites/player_walk.tres" id="2_qbtek"]
@@ -8,14 +8,19 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k8gdh"]
 size = Vector2(4.94975, 21.2132)
 
-[node name="Player" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_raw13"]
+radius = 7.0
+
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_nim0h")
+Speed = 5000.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = ExtResource("2_qbtek")
 autoplay = "default"
-frame_progress = 0.560197
+frame = 2
+frame_progress = 0.776558
 
 [node name="WeaponContainer" type="Node2D" parent="."]
 script = ExtResource("3_5phc5")
@@ -32,3 +37,7 @@ position = Vector2(21.3137, 0.313708)
 rotation = 1.5708
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_k8gdh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_raw13")
+one_way_collision_margin = 0.0

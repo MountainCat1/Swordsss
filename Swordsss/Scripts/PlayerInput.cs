@@ -4,7 +4,8 @@ using System;
 public partial class PlayerInput : Node2D
 {
     public static PlayerInput Instance { get; private set; }
-    
+
+    public event Action<double, Vector2> OnPlayerMovePhysics; 
     public event Action<double, Vector2> OnPlayerMove;
     public event Action OnPlayerAttack;
     public event Action<Vector2> OnPointerMoved;
@@ -41,7 +42,27 @@ public partial class PlayerInput : Node2D
         if(Input.IsActionJustPressed(PlayerInputName.Attack))
             OnPlayerAttack?.Invoke();
     }
-    
+
+    public override void _PhysicsProcess(double delta)
+    {
+        base._Process(delta);
+
+        
+        var move = new Vector2();
+        if (Input.IsActionPressed(PlayerInputName.MoveUp))
+            move.Y -= 1;
+        if (Input.IsActionPressed(PlayerInputName.MoveDown))
+            move.Y += 1;
+        if (Input.IsActionPressed(PlayerInputName.MoveLeft))
+            move.X -= 1;
+        if (Input.IsActionPressed(PlayerInputName.MoveRight))
+            move.X += 1;
+        
+        move = move.Normalized();
+
+        OnPlayerMovePhysics?.Invoke(delta, move);
+    }
+
     public override void _Input(InputEvent @event)
     {
         if (@event is InputEventMouseMotion eventMouseMotion)
