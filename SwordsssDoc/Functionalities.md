@@ -2,8 +2,9 @@ Additional:
 - [x] Make a thumbnail for stream pause
  
 
-- [ ] Input
-- [ ] Movement
+- [x] Input
+- [x] Movement
+- [x] Player Sprite/Animations
 - [ ] Melee Attack
 	- [ ] Sprite
 	- [ ] Script

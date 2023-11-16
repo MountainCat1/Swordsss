@@ -1,3 +1,15 @@
-[gd_scene format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=3 format=3 uid="uid://6t2hppwcvylu"]
+
+[ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
+[ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
 
 [node name="World" type="Node2D"]
+
+[node name="Singletons" parent="." instance=ExtResource("1_kc1pn")]
+
+[node name="Player" parent="." instance=ExtResource("2_dtkjc")]
+texture_filter = 1
+Speed = 200.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4.04, 4.04)

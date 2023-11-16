@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://wpw8os1335es"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerInput.cs" id="1_uljse"]
+
+[node name="Singletons" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_uljse")

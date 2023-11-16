@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://8xxfm4y6ir8k"]
+
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_nim0h"]
+[ext_resource type="SpriteFrames" uid="uid://b5kigquy33m1l" path="res://Sprites/player_walk.tres" id="2_qbtek"]
+[ext_resource type="Script" path="res://Scripts/WeaponContainer.cs" id="3_5phc5"]
+[ext_resource type="Texture2D" uid="uid://dvcpmhsu5vy6t" path="res://Sprites/Sword.png" id="4_o1y2c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k8gdh"]
+size = Vector2(4.94975, 21.2132)
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_nim0h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = ExtResource("2_qbtek")
+autoplay = "default"
+frame_progress = 0.320882
+
+[node name="WeaponContainer" type="Node2D" parent="."]
+script = ExtResource("3_5phc5")
+
+[node name="Area2D" type="Area2D" parent="WeaponContainer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="WeaponContainer/Area2D"]
+position = Vector2(21.3137, 0.313708)
+rotation = 0.785398
+texture = ExtResource("4_o1y2c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WeaponContainer/Area2D"]
+position = Vector2(21.3137, 0.313708)
+rotation = 1.5708
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_k8gdh")
