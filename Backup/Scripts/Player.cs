@@ -1,5 +1,7 @@
 using Godot;
 using System;
+using Godot.NativeInterop;
+using Array = Godot.Collections.Array;
 
 public partial class Player : Node2D
 {
