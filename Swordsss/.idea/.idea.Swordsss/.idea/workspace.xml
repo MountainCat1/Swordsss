@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="Start again">
-      <change afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" afterDir="false" />
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="Added player movement and started working on attack functionality 🐲🏳️‍⚧️🏳️‍⚧️">
+      <change afterPath="$PROJECT_DIR$/Scripts/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/player.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swordsss.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Swordsss.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700159394534</updated>
-      <workItem from="1700159396093" duration="4796000" />
+      <workItem from="1700159396093" duration="5872000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -93,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700159413190</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added player movement and started working on attack functionality 🐲🏳️‍⚧️🏳️‍⚧️">
+      <option name="closed" value="true" />
+      <created>1700164895711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700164895711</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +111,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Start again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start again" />
+    <MESSAGE value="Added player movement and started working on attack functionality ️‍⚧️️‍⚧️" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added player movement and started working on attack functionality ️‍⚧️️‍⚧️" />
   </component>
 </project>

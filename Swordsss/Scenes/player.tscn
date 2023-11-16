@@ -15,7 +15,7 @@ script = ExtResource("1_nim0h")
 texture_filter = 1
 sprite_frames = ExtResource("2_qbtek")
 autoplay = "default"
-frame_progress = 0.320882
+frame_progress = 0.560197
 
 [node name="WeaponContainer" type="Node2D" parent="."]
 script = ExtResource("3_5phc5")

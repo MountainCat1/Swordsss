@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=6 format=3 uid="uid://6t2hppwcvylu"]
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
+[ext_resource type="Texture2D" uid="uid://dcwwj78vyg41h" path="res://icon.svg" id="3_l30yk"]
+[ext_resource type="Script" path="res://Scenes/CollisionTest.cs" id="3_ny4vc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t41hi"]
 
 [node name="World" type="Node2D"]
 
@@ -13,3 +17,16 @@ Speed = 200.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4.04, 4.04)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(128, -24)
+gravity_scale = 0.0
+contact_monitor = true
+script = ExtResource("3_ny4vc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_t41hi")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+scale = Vector2(0.145, 0.145)
+texture = ExtResource("3_l30yk")
