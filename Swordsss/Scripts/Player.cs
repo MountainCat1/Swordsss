@@ -1,16 +1,33 @@
 using Godot;
 using System;
+using Swordsss.Scripts;
 
-public partial class Player : CharacterBody2D
+public partial class Player : CharacterBody2D, IDamageable
 {
+    public static Player Instance { get; private set; }
+    
     [Export] public float Speed { get; set; }
 
+    
+    public IHealth Health { get; private set; }
+
     private AnimatedSprite2D _animatedSprite2D;
+
+
+    public Player()
+    {
+        if(Instance != null)
+            throw new Exception("Player already exists");
+        
+        Instance = this;
+    }
     
     public override void _Ready()
     {
         base._Ready();
 
+        Health = GetNode<Health>("Health");
+        
         _animatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 
         var playerInput = PlayerInput.Instance;
@@ -18,15 +35,15 @@ public partial class Player : CharacterBody2D
         playerInput.OnPlayerMovePhysics += OnPlayerMove;
     }
 
-    private void OnPlayerMove(double delta, Vector2 move)
+    private void OnPlayerMove(double delta, Vector2 direction)
     {
-        Velocity = move * Speed * (float)delta;
+        Velocity = direction * Speed;
         
         MoveAndSlide();
         
-        if (move.X < 0)
+        if (direction.X < 0)
             _animatedSprite2D.FlipH = true;
-        else if(move.X > 0)
+        else if(direction.X > 0)
             _animatedSprite2D.FlipH = false;
     }
 }

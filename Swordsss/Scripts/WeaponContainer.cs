@@ -19,7 +19,7 @@ public partial class WeaponContainer : Node2D
             damageable.Health.DealDamage(1);
         }
     }
-
+    
     private void OnPointerMoved(Vector2 pointerGlobalPosition)
     {
         var direction = (pointerGlobalPosition - GlobalPosition).Normalized();

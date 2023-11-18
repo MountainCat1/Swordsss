@@ -2,10 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
-[ext_resource type="Texture2D" uid="uid://dcwwj78vyg41h" path="res://icon.svg" id="3_l30yk"]
-[ext_resource type="Script" path="res://Scenes/CollisionTest.cs" id="3_ny4vc"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t41hi"]
+[ext_resource type="PackedScene" uid="uid://up5etfbd0jtv" path="res://Scenes/enemy.tscn" id="3_51bdo"]
+[ext_resource type="Script" path="res://Scripts/EnemySpawner.cs" id="4_i680m"]
+[ext_resource type="PackedScene" uid="uid://cmlxj3fcq10fp" path="res://Scenes/ui.tscn" id="5_dye77"]
 
 [node name="World" type="Node2D"]
 
@@ -13,19 +12,16 @@
 
 [node name="Player" parent="." instance=ExtResource("2_dtkjc")]
 texture_filter = 1
+Speed = 100.0
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2(128, -24)
-gravity_scale = 0.0
-contact_monitor = true
-script = ExtResource("3_ny4vc")
+[node name="EnemySpawner" type="Node2D" parent="."]
+script = ExtResource("4_i680m")
+EnemyPrefab = ExtResource("3_51bdo")
+SpawnRate = 1.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-shape = SubResource("RectangleShape2D_t41hi")
+[node name="SpawnTimer" type="Timer" parent="EnemySpawner"]
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-scale = Vector2(0.145, 0.145)
-texture = ExtResource("3_l30yk")
+[node name="UI" parent="." instance=ExtResource("5_dye77")]

@@ -8,18 +8,23 @@ Additional:
 - [x] Melee Attack
 	- [x] Sprite
 	- [x] Script
-- [ ] Pixel Perfect Camera
+- [x] Pixel Perfect Camera // we are not doing it 
+- [ ] Knockback on getting damanged
 - [ ] Range Attack
 	- [ ] Sprite
 	- [ ] Script
-- [ ] Enemies
+- [ ] Enemies <-----
 	- [ ] Sprite
-	- [ ] Spawning
-	- [ ] Movement
+	- [x] Spawning
+	- [x] Movement
 	- [ ] Attack
+	- [x] Dying
 - [ ] Background
 	- [ ] Tiles
 	- [ ] Decorations
 * [ ] Menu
 * [ ] UI
+* [ ] Score
+	* [ ] Calculation
+	* [ ] Display
 

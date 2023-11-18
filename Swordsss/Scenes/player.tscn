@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://8xxfm4y6ir8k"]
+[gd_scene load_steps=8 format=3 uid="uid://8xxfm4y6ir8k"]
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_nim0h"]
 [ext_resource type="SpriteFrames" uid="uid://b5kigquy33m1l" path="res://Sprites/player_walk.tres" id="2_qbtek"]
 [ext_resource type="Script" path="res://Scripts/WeaponContainer.cs" id="3_5phc5"]
 [ext_resource type="Texture2D" uid="uid://dvcpmhsu5vy6t" path="res://Sprites/Sword.png" id="4_o1y2c"]
+[ext_resource type="Script" path="res://Scripts/Health.cs" id="5_a4lrl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k8gdh"]
 size = Vector2(4.94975, 21.2132)
@@ -40,3 +41,8 @@ shape = SubResource("RectangleShape2D_k8gdh")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_raw13")
 one_way_collision_margin = 0.0
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("5_a4lrl")
+Amount = 100.0
+Max = 100.0

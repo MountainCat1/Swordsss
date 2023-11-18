@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3 uid="uid://up5etfbd0jtv"]
+
+[ext_resource type="Script" path="res://Scripts/Enemy.cs" id="1_c6m44"]
+[ext_resource type="SpriteFrames" uid="uid://b5kigquy33m1l" path="res://Sprites/player_walk.tres" id="2_3ir5r"]
+[ext_resource type="Script" path="res://Scripts/Health.cs" id="3_6ls0x"]
+[ext_resource type="Script" path="res://Scripts/TouchWeapon.cs" id="4_d5huc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hx1cl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rd72h"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t01ro"]
+bg_color = Color(1, 0, 0, 1)
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_c6m44")
+Speed = 100.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hx1cl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_3ir5r")
+autoplay = "default"
+frame_progress = 0.210137
+
+[node name="Control" type="Control" parent="."]
+z_index = 100
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -37.0
+offset_right = 58.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -9.0
+offset_top = -3.5
+offset_right = 9.0
+offset_bottom = -1.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_rd72h")
+theme_override_styles/fill = SubResource("StyleBoxFlat_t01ro")
+value = 38.09
+show_percentage = false
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("3_6ls0x")
+Amount = 10.0
+Max = 10.0
+
+[node name="Weapon" type="Node2D" parent="."]
+script = ExtResource("4_d5huc")
+AttacksPerSecond = 1.0
+
+[node name="CooldownTimer" type="Timer" parent="Weapon"]
