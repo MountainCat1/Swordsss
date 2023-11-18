@@ -35,7 +35,6 @@ texture = ExtResource("4_o1y2c")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WeaponContainer/Area2D"]
 position = Vector2(21.3137, 0.313708)
 rotation = 1.5708
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_k8gdh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
