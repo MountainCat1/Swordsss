@@ -1,4 +1,3 @@
-using System.Reflection.Metadata;
 using Godot;
 
 namespace Swordsss.Scripts;

@@ -1,5 +1,4 @@
 using Godot;
-using System;
 using Swordsss.Scripts;
 
 public partial class WeaponContainer : Node2D
