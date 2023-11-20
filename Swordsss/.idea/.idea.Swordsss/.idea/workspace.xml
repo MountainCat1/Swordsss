@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="">
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="refactor">
+      <change afterPath="$PROJECT_DIR$/Scripts/EnemyAnimator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/enemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/enemy.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/player.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/ui.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/ui.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprites/player_walk.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Swordsss.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Swordsss.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/appearance.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/appearance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/workspace.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +33,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/50/1d1724f8/CharacterBody2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/67/e28efe9f/InputEventMouse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/db/d109a8eb/Node2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/e9/f66156dd/AnimatedSprite2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/f9/3a342b2f/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2YGkdVsdRQEUaAv3ph9aOFlxsFQ" />
@@ -83,6 +103,7 @@
       <workItem from="1700159396093" duration="8365000" />
       <workItem from="1700231333241" duration="54000" />
       <workItem from="1700324564962" duration="9337000" />
+      <workItem from="1700498129706" duration="5613000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -132,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700334623268</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit xd 🤯🐱">
+      <option name="closed" value="true" />
+      <created>1700498200936</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700498200936</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1700498267213</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700498267213</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +184,8 @@
     <MESSAGE value="break ️" />
     <MESSAGE value="xd " />
     <MESSAGE value="xdddd ️‍⚧️️" />
-    <option name="LAST_COMMIT_MESSAGE" value="xdddd ️‍⚧️️" />
+    <MESSAGE value="commit xd " />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
 </project>

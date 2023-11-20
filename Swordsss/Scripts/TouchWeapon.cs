@@ -1,9 +1,16 @@
-﻿using Godot;
+﻿using System;
+using Godot;
 
 namespace Swordsss.Scripts;
 
 public partial class TouchWeapon : Node2D, IWeapon
 {
+    #region Events
+
+    public event Action Attacked;
+    public event Action CooldownEnded;
+
+    #endregion
     [Export] public float Range { get; set; } = 18f;
     [Export] public int Damage { get; set; } = 1;
     [Export] public float AttacksPerSecond { get; set; }
@@ -24,6 +31,7 @@ public partial class TouchWeapon : Node2D, IWeapon
     private void CooldownTimerOnTimeout()
     {
         _readyToAttack = true;
+        CooldownEnded?.Invoke();
         _cooldownTimer.Start();
     }
 
@@ -45,6 +53,9 @@ public partial class TouchWeapon : Node2D, IWeapon
         _cooldownTimer.Start();
         _readyToAttack = false;
         
+        Attacked?.Invoke();
+
         return true;
     }
+
 }

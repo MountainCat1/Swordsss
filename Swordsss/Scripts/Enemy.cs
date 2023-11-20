@@ -1,18 +1,23 @@
-﻿using Godot;
+﻿using System;
+using Godot;
 
 namespace Swordsss.Scripts;
 
 
 public partial class Enemy : CharacterBody2D, IDamageable, IWeaponHolder
 {
+    
     public IHealth Health { private set; get; }
     
     public IWeapon Weapon { private set; get; }
     
     [Export] public float Speed { get; set; }
+    [Export] public int ScoreReward { get; set; }
 
     private AnimatedSprite2D _animatedSprite2D;
     private ProgressBar _progressBar;
+    
+    private bool _walkCooldown = false;
 
     public override void _Ready()
     {
@@ -29,10 +34,19 @@ public partial class Enemy : CharacterBody2D, IDamageable, IWeaponHolder
         Health.Depleted += Kill;
 
         Weapon = GetNode<IWeapon>("Weapon");
+        Weapon.CooldownEnded += OnAttackCooldownEnded;
+        
+        GetNode<EnemyAnimator>("AnimatedSprite2D").Register(this);
+    }
+
+    private void OnAttackCooldownEnded()
+    {
+        _walkCooldown = false;
     }
 
     private void Kill()
     {
+        GameManager.Instance.GameState.AddScore(ScoreReward);
         QueueFree();
     }
 
@@ -50,8 +64,9 @@ public partial class Enemy : CharacterBody2D, IDamageable, IWeaponHolder
         if (Weapon.CanAttack(this, player))
         {
             Weapon.Attack(player);
+            _walkCooldown = true;
         }
-        else
+        else if(!_walkCooldown)
         {
             MovementTo(player.GlobalPosition);
         }

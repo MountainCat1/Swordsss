@@ -1,14 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=8 format=3 uid="uid://6t2hppwcvylu"]
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
+[ext_resource type="Texture2D" uid="uid://bio6kxg81xe4q" path="res://Sprites/Background2.png" id="3_43c1t"]
 [ext_resource type="PackedScene" uid="uid://up5etfbd0jtv" path="res://Scenes/enemy.tscn" id="3_51bdo"]
 [ext_resource type="Script" path="res://Scripts/EnemySpawner.cs" id="4_i680m"]
 [ext_resource type="PackedScene" uid="uid://cmlxj3fcq10fp" path="res://Scenes/ui.tscn" id="5_dye77"]
+[ext_resource type="PackedScene" uid="uid://l7p7c1hqn5v6" path="res://Scenes/gameManager.tscn" id="6_esafv"]
 
 [node name="World" type="Node2D"]
 
+[node name="GameManager" parent="." instance=ExtResource("6_esafv")]
+
 [node name="Singletons" parent="." instance=ExtResource("1_kc1pn")]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("3_43c1t")
+region_enabled = true
+region_rect = Rect2(0, 0, 1000, 1000)
 
 [node name="Player" parent="." instance=ExtResource("2_dtkjc")]
 texture_filter = 1

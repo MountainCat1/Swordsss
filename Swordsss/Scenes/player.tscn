@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://8xxfm4y6ir8k"]
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_nim0h"]
-[ext_resource type="SpriteFrames" uid="uid://b5kigquy33m1l" path="res://Sprites/player_walk.tres" id="2_qbtek"]
+[ext_resource type="SpriteFrames" uid="uid://o10e00fe2428" path="res://Sprites/player.tres" id="2_m6m6m"]
 [ext_resource type="Script" path="res://Scripts/WeaponContainer.cs" id="3_5phc5"]
 [ext_resource type="Texture2D" uid="uid://dvcpmhsu5vy6t" path="res://Sprites/Sword.png" id="4_o1y2c"]
 [ext_resource type="Script" path="res://Scripts/Health.cs" id="5_a4lrl"]
@@ -18,10 +18,9 @@ Speed = 5000.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-sprite_frames = ExtResource("2_qbtek")
-autoplay = "default"
-frame = 2
-frame_progress = 0.776558
+sprite_frames = ExtResource("2_m6m6m")
+animation = &"walk"
+autoplay = "walk"
 
 [node name="WeaponContainer" type="Node2D" parent="."]
 script = ExtResource("3_5phc5")
