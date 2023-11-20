@@ -9,16 +9,18 @@ Additional:
 	- [x] Sprite
 	- [x] Script
 - [x] Pixel Perfect Camera // we are not doing it 
-- [ ] Knockback on getting damanged
+- [ ] Knockback on getting damaged
 - [ ] Range Attack
 	- [ ] Sprite
 	- [ ] Script
 - [ ] Enemies <-----
 	- [ ] Sprite
+	- [ ] Animation
 	- [x] Spawning
 	- [x] Movement
-	- [ ] Attack
+	- [x] Attack
 	- [x] Dying
+	- [ ] Dying visuals and audio
 - [ ] Background
 	- [ ] Tiles
 	- [ ] Decorations

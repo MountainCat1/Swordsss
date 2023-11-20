@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="xd 💀">
-      <change afterPath="$PROJECT_DIR$/Scripts/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/EnemySpawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/UI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/player.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprites/player_walk.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Sprites/player_walk.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Swordsss.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Swordsss.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/appearance.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/appearance.json" afterDir="false" />
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +82,7 @@
       <updated>1700159394534</updated>
       <workItem from="1700159396093" duration="8365000" />
       <workItem from="1700231333241" duration="54000" />
-      <workItem from="1700324564962" duration="8816000" />
+      <workItem from="1700324564962" duration="9337000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -139,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700325136505</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="xdddd 🐲🏳️‍⚧️🕶️💀">
+      <option name="closed" value="true" />
+      <created>1700334623268</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700334623268</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +146,7 @@
     <MESSAGE value="added attack detection " />
     <MESSAGE value="break ️" />
     <MESSAGE value="xd " />
-    <option name="LAST_COMMIT_MESSAGE" value="xd " />
+    <MESSAGE value="xdddd ️‍⚧️️" />
+    <option name="LAST_COMMIT_MESSAGE" value="xdddd ️‍⚧️️" />
   </component>
 </project>
