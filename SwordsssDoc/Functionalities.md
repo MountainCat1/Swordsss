@@ -28,6 +28,7 @@ Additional:
 	- [ ] Decorations
 * [ ] Menu
 * [ ] UI
+	* [ ] Some new font
 	* [ ] Refine UI coz its kinda shit
 * [x] Score <----
 	* [ ] Calculation
@@ -36,4 +37,11 @@ Additional:
 * [ ] GameSettings
 	* [ ] make them 
 	* [ ] add how much score per second player gets
-
+- [ ] Audio
+	- [ ] For enemy getting damaged 
+	- [ ] For enemy ranged attack
+	- [ ] For enemy melee attack
+	- [ ] Some soundtrack ( just find something free xD )
+	- [ ] Some menu soundtrack ( just find something free xD )
+	- [ ] UI button click sound
+ 
