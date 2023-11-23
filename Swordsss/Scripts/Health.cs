@@ -14,8 +14,14 @@ public interface IHealth
     public float Amount { get; set; }
     public float Max { get; set; }
     void DealDamage(int i);
-    public event Action Changed;
-    public event Action Depleted;
+
+    #region Events
+
+    event Action Changed;
+    event Action Depleted;
+    event Action Damaged;
+
+    #endregion
 }
 
 [GlobalClass]
@@ -28,11 +34,17 @@ public partial class Health : Node, IHealth
     {
         Amount -= i;
         Changed?.Invoke();
+        Damaged?.Invoke();
         
         if(Amount <= 0)
             Depleted?.Invoke();
     }
 
+    #region Events
+
     public event Action Changed;
     public event Action Depleted;
+    public event Action Damaged;
+
+    #endregion
 }

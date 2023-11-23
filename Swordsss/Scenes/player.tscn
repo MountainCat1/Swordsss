@@ -24,6 +24,7 @@ autoplay = "walk"
 
 [node name="WeaponContainer" type="Node2D" parent="."]
 script = ExtResource("3_5phc5")
+PushAmount = 250.0
 
 [node name="Area2D" type="Area2D" parent="WeaponContainer"]
 

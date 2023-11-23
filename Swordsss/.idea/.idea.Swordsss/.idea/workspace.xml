@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/Scripts/EnemyAnimator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/enemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/enemy.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/player.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/ui.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/ui.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprites/player_walk.tres" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Swordsss.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Swordsss.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/appearance.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/appearance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" afterDir="false" />
-    </list>
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="updated Functionalities.md 🐲🐲" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +21,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2YGkdVsdRQEUaAv3ph9aOFlxsFQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,12 +39,13 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
       &quot;C:\\Users\\Mountain Cat\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
@@ -67,7 +53,7 @@
   <component name="RunManager" selected=".NET Executable.Player">
     <configuration name="Editor" type="RunExe" factoryName=".NET Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Programs/Godot_v4.1.2-stable_mono_win64/Godot_v4.1.2-stable_mono_win64.exe" />
-      <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot; --editor" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;C:\Users\Mountain Cat\Projects\Godot\Swordsss\Swordsss&quot; --editor" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -80,7 +66,7 @@
     </configuration>
     <configuration name="Player" type="RunExe" factoryName=".NET Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Programs/Godot_v4.1.2-stable_mono_win64/Godot_v4.1.2-stable_mono_win64.exe" />
-      <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;C:\Users\Mountain Cat\Projects\Godot\Swordsss\Swordsss&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -103,7 +89,9 @@
       <workItem from="1700159396093" duration="8365000" />
       <workItem from="1700231333241" duration="54000" />
       <workItem from="1700324564962" duration="9337000" />
-      <workItem from="1700498129706" duration="5613000" />
+      <workItem from="1700498129706" duration="6032000" />
+      <workItem from="1700671390750" duration="1678000" />
+      <workItem from="1700754696107" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -169,7 +157,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700498267213</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="meow 🐱🐾🐱🐲🐲">
+      <option name="closed" value="true" />
+      <created>1700505718023</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700505718023</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated Functionalities.md 🐲🐲">
+      <option name="closed" value="true" />
+      <created>1700672077827</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700672077827</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +190,8 @@
     <MESSAGE value="xdddd ️‍⚧️️" />
     <MESSAGE value="commit xd " />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="meow " />
+    <MESSAGE value="updated Functionalities.md " />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Functionalities.md " />
   </component>
 </project>
