@@ -4,9 +4,19 @@ namespace Swordsss.Scripts;
 
 public partial class Missile : Area2D
 {
-    [Export] public Vector2 Direction { get; set; }
+    private Vector2 _direction;
+
+    [Export]
+    public Vector2 Direction
+    {
+        get => _direction;
+        set => _direction = value.Normalized();
+    }
+
     [Export] public float Speed { get; set; }
     [Export] public int Damage { get; set; }
+    [Export] public float PushAmount { get; set; }
+    [Export] public float Timeout { get; set; }
 
     public override void _Ready()
     {
@@ -14,11 +24,17 @@ public partial class Missile : Area2D
 
         BodyEntered += body =>
         {
+            GD.Print($"Hit! {body.Name}");
             if (body is Player player)
             {
                 OnHitPlayer(player);
             }
         };
+
+        var timeoutTimer = GetNode<Timer>("TimeoutTimer");
+        timeoutTimer.WaitTime = Timeout;
+        timeoutTimer.Timeout += QueueFree;
+        timeoutTimer.Start();
     }
 
     private void OnHitPlayer(Player player)

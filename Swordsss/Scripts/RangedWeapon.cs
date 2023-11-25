@@ -1,37 +1,49 @@
 ﻿using System;
 using Godot;
+using Microsoft.Win32.SafeHandles;
 
 namespace Swordsss.Scripts;
 
-public partial class RangedWeapon : IWeapon
+public partial class RangedWeapon : Weapon
 {
+    [Export] public PackedScene MissilePrefab { get; set; }
+
     [Export] public int Damage { get; set; }
     [Export] public float PushAmount { get; set; }
     [Export] public float MissileSpeed { get; set; }
     [Export] public float Range { get; set; }
-    
-    public bool CanAttack(Node2D attacker, IDamageable damageable)
+
+    public override bool CanAttack(Node2D attacker, IDamageable damageable)
     {
-        if(attacker.Position.DistanceTo(damageable.GlobalPosition) > Range)
+        if (!ReadyToAttack)
             return false;
         
+        if (attacker.Position.DistanceTo(damageable.GlobalPosition) > Range)
+            return false;
+
         return true;
     }
 
-    public bool Attack(IDamageable damageable)
+    public override bool Attack(IDamageable damageable)
     {
-        // damageable.Health.DealDamage(Damage);
-        //
-        // _cooldownTimer.Start();
-        // _readyToAttack = false;
-        //
-        // Attacked?.Invoke();
+        var direction = damageable.GlobalPosition - GlobalPosition;
 
-        // TODO: please work on it its not done xD
+        var missile = MissilePrefab.Instantiate<Missile>();
+        
+        MissileContainer.Instance.AddChild(missile);
+        
+        missile.GlobalPosition = GlobalPosition;
+        missile.Direction = direction.Normalized();
+        missile.Speed = MissileSpeed;
+        missile.Damage = Damage;
+        missile.PushAmount = PushAmount;
+
+
+
+        StartWeaponCooldown();
         
         return true;
     }
 
-    public event Action Attacked;
-    public event Action CooldownEnded;
+    public override event Action Attacked;
 }

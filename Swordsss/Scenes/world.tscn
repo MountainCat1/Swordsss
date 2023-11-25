@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=10 format=3 uid="uid://6t2hppwcvylu"]
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
@@ -8,11 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://l7p7c1hqn5v6" path="res://Scenes/gameManager.tscn" id="6_esafv"]
 [ext_resource type="PackedScene" uid="uid://cukabpjfaes8q" path="res://Scenes/melee_enemy.tscn" id="6_t1edy"]
 [ext_resource type="PackedScene" uid="uid://cwt0os40uk8nj" path="res://Scenes/rangeEnemy.tscn" id="7_238do"]
-[ext_resource type="Script" path="res://Scripts/Missile.cs" id="9_lvrcr"]
-[ext_resource type="Texture2D" uid="uid://birllob6ks3ak" path="res://Sprites/Cookie.png" id="10_7fepp"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_i8vbe"]
-radius = 3.0
+[ext_resource type="Script" path="res://Scripts/MissileContainer.cs" id="9_6xqon"]
 
 [node name="World" type="Node2D"]
 
@@ -49,15 +45,8 @@ SpawnRate = 0.1
 
 [node name="UI" parent="." instance=ExtResource("5_dye77")]
 
-[node name="Missile" type="Area2D" parent="."]
-position = Vector2(-1, 112)
-script = ExtResource("9_lvrcr")
-Direction = Vector2(0, -1)
-Speed = 100.0
-Damage = 50
+[node name="Enemy" parent="." instance=ExtResource("7_238do")]
+position = Vector2(157, 47)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Missile"]
-shape = SubResource("CircleShape2D_i8vbe")
-
-[node name="Sprite2D" type="Sprite2D" parent="Missile"]
-texture = ExtResource("10_7fepp")
+[node name="Node" type="Node" parent="."]
+script = ExtResource("9_6xqon")

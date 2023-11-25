@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://up5etfbd0jtv"]
+[gd_scene load_steps=11 format=3 uid="uid://up5etfbd0jtv"]
 
 [ext_resource type="Script" path="res://Scripts/Enemy.cs" id="1_c6m44"]
 [ext_resource type="SpriteFrames" uid="uid://b5kigquy33m1l" path="res://Sprites/monster_walk.tres" id="2_kcp5g"]
 [ext_resource type="Script" path="res://Scripts/EnemyAnimator.cs" id="3_4i8hc"]
 [ext_resource type="Script" path="res://Scripts/Health.cs" id="3_6ls0x"]
-[ext_resource type="Script" path="res://Scripts/TouchWeapon.cs" id="4_d5huc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hx1cl"]
 
@@ -104,12 +103,6 @@ show_percentage = false
 script = ExtResource("3_6ls0x")
 Amount = 10.0
 Max = 10.0
-
-[node name="Weapon" type="Node2D" parent="."]
-script = ExtResource("4_d5huc")
-AttacksPerSecond = 1.0
-
-[node name="CooldownTimer" type="Timer" parent="Weapon"]
 
 [node name="DamagedAnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "damaged_animation"
