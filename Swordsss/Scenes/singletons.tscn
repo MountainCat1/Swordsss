@@ -4,5 +4,5 @@
 
 [node name="Singletons" type="Node2D"]
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="PlayerInput" type="Node2D" parent="."]
 script = ExtResource("1_uljse")

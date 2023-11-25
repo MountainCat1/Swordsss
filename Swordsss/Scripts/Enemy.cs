@@ -59,6 +59,8 @@ public partial class Enemy : Creature, IWeaponHolder
 
         var player = GetPlayer();
 
+        ApplyMomentum();
+        
         if (Weapon.CanAttack(this, player))
         {
             Weapon.Attack(player);
@@ -66,8 +68,10 @@ public partial class Enemy : Creature, IWeaponHolder
         }
         else if (!_walkCooldown)
         {
-            MovementTo(player.GlobalPosition);
+            SteerMovement(player.GlobalPosition);
         }
+        
+        MoveAndSlide();
     }
 
     private Player GetPlayer()

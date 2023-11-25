@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dv2e6ef3xc246"]
+
+[node name="BloodParticale" type="CPUParticles2D"]
+z_index = -1
+position = Vector2(42, -21)
+emitting = false
+amount = 100
+lifetime = 32.24
+one_shot = true
+speed_scale = 3.35
+explosiveness = 1.0
+lifetime_randomness = 0.85
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 6.51
+initial_velocity_max = 32.02
+damping_min = 31.122
+damping_max = 71.429
+color = Color(0.670588, 0.129412, 0.00784314, 1)

@@ -38,7 +38,7 @@ public partial class RangedWeapon : Weapon
         missile.Damage = Damage;
         missile.PushAmount = PushAmount;
 
-
+        Attacked?.Invoke();
 
         StartWeaponCooldown();
         

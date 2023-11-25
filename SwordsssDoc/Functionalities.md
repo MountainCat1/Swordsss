@@ -5,6 +5,8 @@ Additional:
 - [x] Input
 - [x] Movement
 - [x] Player Sprite/Animations
+- [ ] Player Death
+- [ ] Game End stuff (end screen and stuff)
 - [x] Melee Attack
 	- [x] Sprite
 	- [x] Script
@@ -12,7 +14,7 @@ Additional:
 - [x] Knockback on getting damaged
 - [ ] Range Attack
 	- [ ] Sprite
-	- [ ] Script <-----
+	- [x] Script <-----
 - [ ] Enemies
 	- [x] Sprite
 	- [x] Animation
@@ -20,15 +22,15 @@ Additional:
 	- [x] Movement
 	- [x] Attack
 	- [x] Dying
-	- [ ] Dying visuals and audio
+	- [x] Dying visuals and audio
 	- [ ] Fancy animation move sprite towards the target on attack (optional)
 - [ ] Background
 	- [x] Added a background node
-	- [ ] Tiles
+	- [x] Tiles
 	- [ ] Decorations
 * [ ] Menu
 * [ ] UI
-	* [ ] Some new font
+	* [x] Some new font
 	* [ ] Refine UI coz its kinda shit
 * [x] Score <----
 	* [ ] Calculation
@@ -44,6 +46,10 @@ Additional:
 	- [ ] Some soundtrack ( just find something free xD )
 	- [ ] Some menu soundtrack ( just find something free xD )
 	- [ ] UI button click sound
+- [ ] Some power-ups
+	- [ ] Health
+	- [ ] Damage Bonus
+	- [ ] Movement Speed
 
 
 

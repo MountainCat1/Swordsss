@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=12 format=3 uid="uid://6t2hppwcvylu"]
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
@@ -8,7 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://l7p7c1hqn5v6" path="res://Scenes/gameManager.tscn" id="6_esafv"]
 [ext_resource type="PackedScene" uid="uid://cukabpjfaes8q" path="res://Scenes/melee_enemy.tscn" id="6_t1edy"]
 [ext_resource type="PackedScene" uid="uid://cwt0os40uk8nj" path="res://Scenes/rangeEnemy.tscn" id="7_238do"]
+[ext_resource type="Script" path="res://Scripts/BloodManager.cs" id="9_0mmi0"]
 [ext_resource type="Script" path="res://Scripts/MissileContainer.cs" id="9_6xqon"]
+[ext_resource type="PackedScene" uid="uid://dv2e6ef3xc246" path="res://Scenes/blood_particale.tscn" id="10_8snx3"]
 
 [node name="World" type="Node2D"]
 
@@ -17,10 +19,11 @@
 [node name="Singletons" parent="." instance=ExtResource("1_kc1pn")]
 
 [node name="Background" type="Sprite2D" parent="."]
+z_index = -10
 texture_repeat = 2
 texture = ExtResource("3_43c1t")
 region_enabled = true
-region_rect = Rect2(0, 0, 1000, 1000)
+region_rect = Rect2(0, 0, 5000, 5000)
 
 [node name="Player" parent="." instance=ExtResource("2_dtkjc")]
 texture_filter = 1
@@ -45,8 +48,9 @@ SpawnRate = 0.1
 
 [node name="UI" parent="." instance=ExtResource("5_dye77")]
 
-[node name="Enemy" parent="." instance=ExtResource("7_238do")]
-position = Vector2(157, 47)
-
-[node name="Node" type="Node" parent="."]
+[node name="MissileContainer" type="Node" parent="."]
 script = ExtResource("9_6xqon")
+
+[node name="BloodManager" type="Node" parent="."]
+script = ExtResource("9_0mmi0")
+BloodPrefab = ExtResource("10_8snx3")

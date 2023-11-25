@@ -34,18 +34,21 @@ public partial class Creature : CharacterBody2D, IDamageable
         Momentum += momentum;
     }
 
-    protected void MovementTo(Vector2 target)
+    protected void ApplyMomentum()
+    {
+        Velocity = Momentum;
+    }
+
+    protected void SteerMovement(Vector2 target)
     {
         var controlledMove = (target - GlobalPosition).Normalized();
-        
-        Velocity = controlledMove * Speed + Momentum;
-        
-        MoveAndSlide();
         
         if (controlledMove.X < 0)
             AnimatedSprite2D.FlipH = true;
         else if(controlledMove.X > 0)
             AnimatedSprite2D.FlipH = false;
+        
+        Velocity += controlledMove * Speed;
     }
     
     protected void ApplyFriction(double delta)
@@ -55,6 +58,7 @@ public partial class Creature : CharacterBody2D, IDamageable
     
     protected void Kill()
     {
+        BloodManager.Instance.PlaceBlood(GlobalPosition);
         OnKilled?.Invoke();
         QueueFree();
     }
