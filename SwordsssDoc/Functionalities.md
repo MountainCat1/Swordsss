@@ -9,10 +9,10 @@ Additional:
 	- [x] Sprite
 	- [x] Script
 - [x] Pixel Perfect Camera // we are not doing it 
-- [ ] Knockback on getting damaged
+- [x] Knockback on getting damaged
 - [ ] Range Attack
 	- [ ] Sprite
-	- [ ] Script
+	- [ ] Script <-----
 - [ ] Enemies
 	- [x] Sprite
 	- [x] Animation
@@ -44,4 +44,8 @@ Additional:
 	- [ ] Some soundtrack ( just find something free xD )
 	- [ ] Some menu soundtrack ( just find something free xD )
 	- [ ] UI button click sound
- 
+
+
+
+### Funny things :D
+- [ ] Add to the player character a backpack

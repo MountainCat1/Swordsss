@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwt0os40uk8nj"]
+
+[ext_resource type="PackedScene" uid="uid://up5etfbd0jtv" path="res://Scenes/enemy.tscn" id="1_fxtcv"]
+[ext_resource type="SpriteFrames" uid="uid://bj0w1nkaxx3" path="res://Resources/range_enemy_sprite_frames.tres" id="2_qf041"]
+
+[node name="Enemy" instance=ExtResource("1_fxtcv")]
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = ExtResource("2_qf041")
