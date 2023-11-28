@@ -18,13 +18,7 @@ public partial class GameManager : Node
     public GameState GameState { get; set; }
     public GameStatus GameStatus { get; set; } = GameStatus.Initial;
 
-    public GameManager()
-    {
-        if (Instance != null)
-            throw new Exception("Player already exists");
 
-        Instance = this;
-    }
 
     public override void _Ready()
     {
@@ -41,6 +35,15 @@ public partial class GameManager : Node
 
         GameStatus = GameStatus.Playing;    
     }
+    
+    public override void _Notification(int what)
+    {
+        base._Notification(what);
+        if(what == NotificationEnterTree)
+            Instance = this;
+        if(what == NotificationExitTree)
+            Instance = null;
+    }
 
     private void OnPlayerDeath()
     {
@@ -56,7 +59,7 @@ public partial class GameManager : Node
 
     public void Restart()
     {
-        throw new NotImplementedException();
+        GetTree().ReloadCurrentScene();
     }
 
     public void Quit()

@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="fixed all null reference exceptions happening after player gets destroyed 🤯🤯🐲🐲🔥🔥">
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="added end game screen with working exit button, restart button requires some work though DDD: 🤯🤯🤯✨✨🏳️‍⚧️🕶️🗺️">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/LabelSettings.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/LabelSettings.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BloodManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BloodManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/MissileContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/MissileContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/PlayerInput.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +29,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/f1/1df0489b/Node2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/fb/1391b7aa/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/Missile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -45,7 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Executable.Player.executor": "Debug",
+    ".NET Executable.Player.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -108,7 +111,7 @@
       <workItem from="1700754695866" duration="5363000" />
       <workItem from="1700934324924" duration="5472000" />
       <workItem from="1701190452948" duration="114000" />
-      <workItem from="1701191790017" duration="4720000" />
+      <workItem from="1701191790017" duration="5750000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -270,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701194117637</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added end game screen with working exit button, restart button requires some work though DDD: 🤯🤯🤯✨✨🏳️‍⚧️🕶️🗺️">
+      <option name="closed" value="true" />
+      <created>1701197332389</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1701197332389</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +310,7 @@
     <MESSAGE value="refactor in Player.cs ✨✨" />
     <MESSAGE value="Added following camera" />
     <MESSAGE value="fixed all null reference exceptions happening after player gets destroyed " />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed all null reference exceptions happening after player gets destroyed " />
+    <MESSAGE value="added end game screen with working exit button, restart button requires some work though DDD: ✨✨️‍⚧️️️" />
+    <option name="LAST_COMMIT_MESSAGE" value="added end game screen with working exit button, restart button requires some work though DDD: ✨✨️‍⚧️️️" />
   </component>
 </project>

@@ -6,14 +6,6 @@ public partial class Player : Creature
 {
     public static Player Instance { get; private set; }
     
-    public Player()
-    {
-        if(Instance != null)
-            throw new Exception("Player already exists");
-        
-        Instance = this;
-    }
-    
     public override void _Ready()
     {
         base._Ready();
@@ -25,10 +17,13 @@ public partial class Player : Creature
 
     public override void _Notification(int what)
     {
+        base._Notification(what);
         if(what == NotificationPredelete)
             PlayerInput.Instance.OnPlayerMovePhysics -= OnPlayerMove;
-        
-        base._Notification(what);
+        if(what == NotificationEnterTree)
+            Instance = this;
+        if(what == NotificationExitTree)
+            Instance = null;
     }
 
 

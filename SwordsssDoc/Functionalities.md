@@ -5,15 +5,15 @@ Additional:
 - [x] Input
 - [x] Movement
 - [x] Player Sprite/Animations
-- [ ] Player Death <---
-- [ ] Game End stuff (end screen and stuff)
+- [x] Player Death <---
+- [x] Game End stuff (end screen and stuff)
 - [x] Melee Attack
 	- [x] Sprite
 	- [x] Script
 - [x] Pixel Perfect Camera // we are not doing it 
 - [x] Knockback on getting damaged
-- [ ] Range Attack
-	- [ ] Sprite
+- [x] Range Attack
+	- [x] Sprite
 	- [x] Scripte
 - [ ] Enemies
 	- [x] Sprite
@@ -28,7 +28,7 @@ Additional:
 	- [x] Added a background node
 	- [x] Tiles
 	- [ ] Decorations
-* [ ] Menu
+* [x] Menu
 * [ ] UI
 	* [x] Some new font
 	* [ ] Refine UI coz its kinda shit
@@ -39,6 +39,7 @@ Additional:
 * [ ] GameSettings
 	* [ ] make them 
 	* [ ] add how much score per second player gets
+	* [ ] how much enemies spawn
 - [ ] Audio
 	- [ ] For enemy getting damaged 
 	- [ ] For enemy ranged attack
@@ -50,7 +51,6 @@ Additional:
 	- [ ] Health
 	- [ ] Damage Bonus
 	- [ ] Movement Speed
-
 
 
 ### Funny things :D

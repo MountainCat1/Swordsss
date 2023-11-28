@@ -14,7 +14,6 @@ public partial class EndGameScreenController : Node
 
     private void OnGameEnded()
     {
-        GD.Print("XD");
         var endGameScreen = EndGameScreen.Instantiate();
         AddChild(endGameScreen);
     }

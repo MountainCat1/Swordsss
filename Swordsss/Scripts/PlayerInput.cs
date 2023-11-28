@@ -12,15 +12,16 @@ public partial class PlayerInput : Node2D
     public event Action<Vector2> OnPointerMoved;
 
     public Vector2 PointerPosition { get; set; }
-
-
-    public PlayerInput()
+    
+    public override void _Notification(int what)
     {
-        if (Instance != null)
-            throw new Exception("PlayerInput already exists");
-
-        Instance = this;
+        base._Notification(what);
+        if(what == NotificationEnterTree)
+            Instance = this;
+        if(what == NotificationExitTree)
+            Instance = null;
     }
+
 
     public override void _Process(double delta)
     {

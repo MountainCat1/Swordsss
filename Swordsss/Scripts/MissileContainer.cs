@@ -6,11 +6,13 @@ public partial class MissileContainer : Node
 {
     public static MissileContainer Instance { get; private set; }
     
-    public MissileContainer()
+    public override void _Notification(int what)
     {
-        if(Instance != null)
-            throw new System.Exception("MissileContainer already exists");
-        
-        Instance = this;
+        base._Notification(what);
+        if(what == NotificationEnterTree)
+            Instance = this;
+        if(what == NotificationExitTree)
+            Instance = null;
     }
+
 }
