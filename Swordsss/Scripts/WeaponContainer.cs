@@ -13,6 +13,14 @@ public partial class WeaponContainer : Node2D
         GetNode<Area2D>("Area2D").BodyEntered += OnBodyEntered;
     }
 
+    public override void _Notification(int what)
+    {
+        base._Notification(what);
+        
+        if(what == NotificationPredelete)
+            PlayerInput.Instance.OnPointerMoved -= OnPointerMoved;
+    }
+
     private void OnBodyEntered(Node2D body)
     {
         if (body is IDamageable damageable)

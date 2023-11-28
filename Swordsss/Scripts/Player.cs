@@ -23,6 +23,15 @@ public partial class Player : Creature
         playerInput.OnPlayerMovePhysics += OnPlayerMove;
     }
 
+    public override void _Notification(int what)
+    {
+        if(what == NotificationPredelete)
+            PlayerInput.Instance.OnPlayerMovePhysics -= OnPlayerMove;
+        
+        base._Notification(what);
+    }
+
+
     private void OnPlayerMove(double delta, Vector2 direction)
     {
         Velocity = direction * Speed;

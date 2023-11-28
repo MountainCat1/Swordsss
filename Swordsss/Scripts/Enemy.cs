@@ -56,10 +56,20 @@ public partial class Enemy : Creature, IWeaponHolder
     {
         base._PhysicsProcess(delta);
 
+        ApplyMomentum();
+
+        if (GameManager.Instance.GameStatus == GameStatus.Playing)
+        {
+            AI();
+        }
+        
+        MoveAndSlide();
+    }
+
+    private void AI()
+    {
         var player = GetPlayer();
 
-        ApplyMomentum();
-        
         if (Weapon.CanAttack(this, player))
         {
             Weapon.Attack(player);
@@ -69,9 +79,8 @@ public partial class Enemy : Creature, IWeaponHolder
         {
             SteerMovement(player.GlobalPosition);
         }
-        
-        MoveAndSlide();
     }
+
 
     private Player GetPlayer()
     {

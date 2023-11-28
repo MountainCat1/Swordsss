@@ -44,5 +44,5 @@ one_way_collision_margin = 0.0
 
 [node name="Health" type="Node" parent="."]
 script = ExtResource("5_a4lrl")
-Amount = 100.0
+Amount = 5.0
 Max = 100.0
