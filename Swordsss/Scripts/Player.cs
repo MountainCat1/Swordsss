@@ -2,17 +2,10 @@ using Godot;
 using System;
 using Swordsss.Scripts;
 
-public partial class Player : CharacterBody2D, IDamageable
+public partial class Player : Creature
 {
     public static Player Instance { get; private set; }
     
-    [Export] public float Speed { get; set; }
-
-    
-    public IHealth Health { get; private set; }
-
-    private AnimatedSprite2D _animatedSprite2D;
-
     public Player()
     {
         if(Instance != null)
@@ -24,10 +17,6 @@ public partial class Player : CharacterBody2D, IDamageable
     public override void _Ready()
     {
         base._Ready();
-
-        Health = GetNode<Health>("Health");
-        
-        _animatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 
         var playerInput = PlayerInput.Instance;
         
@@ -41,8 +30,8 @@ public partial class Player : CharacterBody2D, IDamageable
         MoveAndSlide();
         
         if (direction.X < 0)
-            _animatedSprite2D.FlipH = true;
+            AnimatedSprite2D.FlipH = true;
         else if(direction.X > 0)
-            _animatedSprite2D.FlipH = false;
+            AnimatedSprite2D.FlipH = false;
     }
 }
