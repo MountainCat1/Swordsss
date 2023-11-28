@@ -24,7 +24,6 @@ public partial class Missile : Area2D
 
         BodyEntered += body =>
         {
-            GD.Print($"Hit! {body.Name}");
             if (body is Player player)
             {
                 OnHitPlayer(player);

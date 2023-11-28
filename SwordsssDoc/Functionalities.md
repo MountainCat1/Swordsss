@@ -5,7 +5,7 @@ Additional:
 - [x] Input
 - [x] Movement
 - [x] Player Sprite/Animations
-- [ ] Player Death
+- [ ] Player Death <---
 - [ ] Game End stuff (end screen and stuff)
 - [x] Melee Attack
 	- [x] Sprite
@@ -14,7 +14,7 @@ Additional:
 - [x] Knockback on getting damaged
 - [ ] Range Attack
 	- [ ] Sprite
-	- [x] Script <-----
+	- [x] Scripte
 - [ ] Enemies
 	- [x] Sprite
 	- [x] Animation

@@ -14,8 +14,6 @@
 
 [node name="World" type="Node2D"]
 
-[node name="GameManager" parent="." instance=ExtResource("6_esafv")]
-
 [node name="Singletons" parent="." instance=ExtResource("1_kc1pn")]
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -31,6 +29,8 @@ Speed = 100.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
+
+[node name="GameManager" parent="." instance=ExtResource("6_esafv")]
 
 [node name="MeleeEnemySpawner" type="Node2D" parent="."]
 script = ExtResource("4_i680m")

@@ -13,7 +13,6 @@ public partial class Player : CharacterBody2D, IDamageable
 
     private AnimatedSprite2D _animatedSprite2D;
 
-
     public Player()
     {
         if(Instance != null)
