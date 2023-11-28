@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtrhut5bbh2yf"]
+
+[ext_resource type="LabelSettings" uid="uid://jb2r73ebetel" path="res://Resources/LabelSettings.tres" id="1_42nab"]
+[ext_resource type="Theme" uid="uid://5advhirahyq1" path="res://Resources/theme.tres" id="1_e50fn"]
+[ext_resource type="Script" path="res://Scenes/GameOverScreen.cs" id="2_sx25y"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="game_over_screen" type="Control" parent="." node_paths=PackedStringArray("ExitButton", "RestartButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_e50fn")
+script = ExtResource("2_sx25y")
+ExitButton = NodePath("Panel/VBoxContainer/QuitButton")
+RestartButton = NodePath("Panel/VBoxContainer/RestartButton")
+
+[node name="Panel" type="Panel" parent="game_over_screen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -250.0
+offset_right = 175.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="game_over_screen/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="game_over_screen/Panel/VBoxContainer"]
+layout_mode = 2
+text = "GAME OVER"
+label_settings = ExtResource("1_42nab")
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="game_over_screen/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Restart"
+
+[node name="QuitButton" type="Button" parent="game_over_screen/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Quit"

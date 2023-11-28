@@ -1,7 +1,12 @@
-[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://jb2r73ebetel"]
+[gd_resource type="LabelSettings" load_steps=3 format=3 uid="uid://jb2r73ebetel"]
 
 [ext_resource type="FontFile" uid="uid://cb85bws2kpcg2" path="res://Fonts/VCR_OSD_MONO_1.001.ttf" id="1_vpvnr"]
 
+[sub_resource type="FontVariation" id="FontVariation_og5n7"]
+base_font = ExtResource("1_vpvnr")
+fallbacks = Array[Font]([ExtResource("1_vpvnr")])
+spacing_glyph = 10
+
 [resource]
-font = ExtResource("1_vpvnr")
+font = SubResource("FontVariation_og5n7")
 font_size = 25

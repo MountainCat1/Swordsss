@@ -53,4 +53,14 @@ public partial class GameManager : Node
     {
         GameState.AddScore(0.1f);
     }
+
+    public void Restart()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Quit()
+    {
+        GetTree().Quit();
+    }
 }

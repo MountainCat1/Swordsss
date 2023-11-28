@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=15 format=3 uid="uid://6t2hppwcvylu"]
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
@@ -12,6 +12,8 @@
 [ext_resource type="Script" path="res://Scripts/BloodManager.cs" id="9_0mmi0"]
 [ext_resource type="Script" path="res://Scripts/MissileContainer.cs" id="9_6xqon"]
 [ext_resource type="PackedScene" uid="uid://dv2e6ef3xc246" path="res://Scenes/blood_particale.tscn" id="10_8snx3"]
+[ext_resource type="Script" path="res://Scripts/EndGameScreenController.cs" id="13_0fk6n"]
+[ext_resource type="PackedScene" uid="uid://dtrhut5bbh2yf" path="res://Scenes/game_over_screen.tscn" id="14_li60c"]
 
 [node name="World" type="Node2D"]
 
@@ -59,3 +61,7 @@ script = ExtResource("9_6xqon")
 [node name="BloodManager" type="Node" parent="."]
 script = ExtResource("9_0mmi0")
 BloodPrefab = ExtResource("10_8snx3")
+
+[node name="End Game Screen Controller" type="Node" parent="."]
+script = ExtResource("13_0fk6n")
+EndGameScreen = ExtResource("14_li60c")
