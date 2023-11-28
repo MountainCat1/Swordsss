@@ -25,7 +25,6 @@ public partial class Enemy : Creature, IWeaponHolder
         _progressBar.MaxValue = Health.Max;
 
         Health.Changed += OnHealthChanged;
-        Health.Depleted += Kill;
 
         Weapon = GetNode<IWeapon>("Weapon");
         Weapon.CooldownEnded += OnAttackCooldownEnded;

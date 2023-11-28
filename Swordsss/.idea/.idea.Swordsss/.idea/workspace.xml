@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="added game over event" />
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="refactor in Player.cs ✨✨🤯🤯">
+      <change afterPath="$PROJECT_DIR$/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Creature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Creature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Enemy.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +26,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/f1/1df0489b/Node2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/fb/1391b7aa/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/Missile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -101,7 +106,7 @@
       <workItem from="1700754695866" duration="5363000" />
       <workItem from="1700934324924" duration="5472000" />
       <workItem from="1701190452948" duration="114000" />
-      <workItem from="1701191790017" duration="719000" />
+      <workItem from="1701191790017" duration="1037000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -231,7 +236,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701192481354</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added gitignore for builds">
+      <option name="closed" value="true" />
+      <created>1701192540092</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701192540092</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor in Player.cs ✨✨🤯🤯">
+      <option name="closed" value="true" />
+      <created>1701192696428</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701192696428</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,25 +277,8 @@
     <MESSAGE value="Shrimple ranged attacking enemy done :D " />
     <MESSAGE value="cats are cute :3 " />
     <MESSAGE value="added game over event" />
-    <option name="LAST_COMMIT_MESSAGE" value="added game over event" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Scripts/Creature.cs</url>
-          <line>60</line>
-          <properties documentPath="C:\Users\Mountain Cat\Projects\Godot\Swordsss\Swordsss\Scripts\Creature.cs" initialLine="60" containingFunctionPresentation="Method 'Kill'">
-            <startOffsets>
-              <option value="1416" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1465" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added gitignore for builds" />
+    <MESSAGE value="refactor in Player.cs ✨✨" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor in Player.cs ✨✨" />
   </component>
 </project>

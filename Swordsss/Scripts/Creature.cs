@@ -19,7 +19,10 @@ public partial class Creature : CharacterBody2D, IDamageable
     public override void _Ready()
     {
         base._Ready();
+        
         Health = GetNode<Health>("Health");
+        Health.Depleted += Kill;
+        
         AnimatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
     }
 
