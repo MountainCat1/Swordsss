@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="added settings and spawner management 😼😼🤯🤯🔴🤖🔥">
-      <change afterPath="$PROJECT_DIR$/Scripts/Pickup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/PickupSpawningConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/PickupSpawningManager.cs" afterDir="false" />
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="Added pickups 🤯✨🐲🐲🐾🐾">
+      <change afterPath="$PROJECT_DIR$/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/enemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/enemy.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/health_pickup.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/health_pickup.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/player.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/PowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/HealthPickup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Creature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Creature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Pickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Pickup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/RangedWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/RangedWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +115,7 @@
       <workItem from="1700934324924" duration="5472000" />
       <workItem from="1701190452948" duration="114000" />
       <workItem from="1701191790017" duration="6331000" />
-      <workItem from="1701450578349" duration="5086000" />
+      <workItem from="1701450578349" duration="8029000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -296,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701454105813</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added pickups 🤯✨🐲🐲🐾🐾">
+      <option name="closed" value="true" />
+      <created>1701455756809</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1701455756809</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +341,7 @@
     <MESSAGE value="added end game screen with working exit button, restart button requires some work though DDD: ✨✨️‍⚧️️️" />
     <MESSAGE value="fixed singletons on restart" />
     <MESSAGE value="added settings and spawner management " />
-    <option name="LAST_COMMIT_MESSAGE" value="added settings and spawner management " />
+    <MESSAGE value="Added pickups ✨" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pickups ✨" />
   </component>
 </project>

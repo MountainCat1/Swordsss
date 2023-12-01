@@ -63,6 +63,7 @@ public partial class Creature : CharacterBody2D, IDamageable
     {
         BloodManager.Instance.PlaceBlood(GlobalPosition);
         OnKilled?.Invoke();
+        AudioManager.Play(GlobalPosition, Sounds.EnemyDiedSound);
         QueueFree();
     }
 }

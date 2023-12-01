@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://up5etfbd0jtv"]
+[gd_scene load_steps=12 format=3 uid="uid://up5etfbd0jtv"]
 
 [ext_resource type="Script" path="res://Scripts/Enemy.cs" id="1_c6m44"]
+[ext_resource type="Texture2D" uid="uid://8xyohhqrfgvy" path="res://Sprites/Shadow.png" id="2_4a05e"]
 [ext_resource type="SpriteFrames" uid="uid://b5kigquy33m1l" path="res://Sprites/monster_walk.tres" id="2_kcp5g"]
 [ext_resource type="Script" path="res://Scripts/EnemyAnimator.cs" id="3_4i8hc"]
 [ext_resource type="Script" path="res://Scripts/Health.cs" id="3_6ls0x"]
@@ -54,6 +55,10 @@ _data = {
 script = ExtResource("1_c6m44")
 ScoreReward = 5
 Speed = 100.0
+
+[node name="Shadow" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("2_4a05e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hx1cl")

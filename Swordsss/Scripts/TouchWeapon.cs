@@ -29,6 +29,8 @@ public partial class TouchWeapon : Weapon
         StartWeaponCooldown();
         
         Attacked?.Invoke();
+        
+        AudioManager.Play(GlobalPosition, Sounds.ChompSound);
 
         return true;
     }

@@ -20,5 +20,6 @@ public abstract partial class Pickup : Area2D
     protected virtual void OnPickedUp()
     {
         QueueFree();
+        AudioManager.Play(GlobalPosition, Sounds.Pickup);
     }
 }

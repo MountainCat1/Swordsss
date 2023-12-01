@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=32 format=3 uid="uid://6t2hppwcvylu"]
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
@@ -19,6 +19,14 @@
 [ext_resource type="Script" path="res://Scripts/PickupSpawningManager.cs" id="17_sxf5a"]
 [ext_resource type="Script" path="res://Scripts/PickupSpawningConfig.cs" id="18_bkh8y"]
 [ext_resource type="PackedScene" uid="uid://cc5ajjth6agjx" path="res://Scenes/health_pickup.tscn" id="18_e6bg8"]
+[ext_resource type="Script" path="res://Scripts/AudioManager.cs" id="20_e2cct"]
+[ext_resource type="AudioStream" uid="uid://xdxco2m8ddv7" path="res://Audio/253172__suntemple__retro-bonus-pickup-sfx.wav" id="21_lfsf8"]
+[ext_resource type="AudioStream" uid="uid://cw28k7j276tje" path="res://Audio/523769__matrixxx__retro-hit.wav" id="22_jmtce"]
+[ext_resource type="AudioStream" uid="uid://bwx7urf48ae6q" path="res://Audio/507706__mrthenoronha__hit-5-8-bit.wav" id="22_xbdci"]
+[ext_resource type="AudioStream" uid="uid://bo78r8mpurkti" path="res://Audio/Kick Shock.mp3" id="23_h3nxg"]
+[ext_resource type="AudioStream" uid="uid://cch583h5pm2tx" path="res://Audio/366947__jacdutoit__spit.wav" id="24_1flus"]
+[ext_resource type="AudioStream" uid="uid://cn8de1h56mlph" path="res://Audio/543386__thedragonsspark__nom-noise.wav" id="25_lt1gc"]
+[ext_resource type="AudioStream" uid="uid://cjvbff78hamxw" path="res://Audio/507020__mrthenoronha__gun-shot-6-8-bit.wav" id="26_6hs5m"]
 
 [sub_resource type="Resource" id="Resource_t62li"]
 resource_name = "Spawning Config"
@@ -90,3 +98,17 @@ script = ExtResource("16_gtkyc")
 script = ExtResource("17_sxf5a")
 SpawningConfigs = [SubResource("Resource_g2u7b")]
 SpawnRange = 400.0
+
+[node name="Audio Manger" type="Node" parent="."]
+script = ExtResource("20_e2cct")
+PickupSound = ExtResource("21_lfsf8")
+HitSound = ExtResource("22_jmtce")
+PlayerHitSound = ExtResource("22_xbdci")
+SpitSound = ExtResource("24_1flus")
+ChompSound = ExtResource("25_lt1gc")
+EnemyDiedSound = ExtResource("26_6hs5m")
+
+[node name="SoundtrackPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_h3nxg")
+volume_db = -20.736
+autoplay = true

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Godot;
 
 namespace Swordsss.Scripts;
@@ -27,7 +28,7 @@ public partial class PickupSpawningManager : Node
     public override void _Ready()
     {
         base._Ready();
-        
+
         foreach (var config in SpawningConfigs.Cast<PickupSpawningConfig>())
         {
             var timer = new Timer {WaitTime = 1f / config.SpawningRate};
@@ -38,6 +39,7 @@ public partial class PickupSpawningManager : Node
             AddChild(timer);
             GD.Print(timer.WaitTime);
             timer.Start();
+            GameManager.Instance.OnGameEnd += () => timer.Stop();
         }
     }
     

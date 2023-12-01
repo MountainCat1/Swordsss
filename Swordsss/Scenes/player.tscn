@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://8xxfm4y6ir8k"]
+[gd_scene load_steps=9 format=3 uid="uid://8xxfm4y6ir8k"]
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_nim0h"]
 [ext_resource type="SpriteFrames" uid="uid://o10e00fe2428" path="res://Sprites/player.tres" id="2_m6m6m"]
 [ext_resource type="Script" path="res://Scripts/WeaponContainer.cs" id="3_5phc5"]
 [ext_resource type="Texture2D" uid="uid://dvcpmhsu5vy6t" path="res://Sprites/Sword.png" id="4_o1y2c"]
 [ext_resource type="Script" path="res://Scripts/Health.cs" id="5_a4lrl"]
+[ext_resource type="Texture2D" uid="uid://8xyohhqrfgvy" path="res://Sprites/Shadow.png" id="6_v3y0c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k8gdh"]
 size = Vector2(4.94975, 21.2132)
@@ -15,6 +16,10 @@ radius = 7.0
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_nim0h")
 Speed = 5000.0
+
+[node name="Shadow" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("6_v3y0c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

@@ -42,6 +42,8 @@ public partial class RangedWeapon : Weapon
 
         StartWeaponCooldown();
         
+        AudioManager.Play(GlobalPosition, Sounds.SpitSound);
+        
         return true;
     }
 
