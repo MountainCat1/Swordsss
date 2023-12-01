@@ -33,13 +33,13 @@ Additional:
 	* [x] Some new font
 	* [ ] Refine UI coz its kinda shit
 * [x] Score <----
-	* [ ] Calculation
+	* [x] Calculation
 	* [x] Display
 * [ ] Reorganize a project so that scripts for a scene are in the same folder as said scene
-* [ ] GameSettings
-	* [ ] make them 
-	* [ ] add how much score per second player gets
-	* [ ] how much enemies spawn
+* [x] GameSettings
+	* [x] make them 
+	* [x] add how much score per second player gets
+	* [x] how much enemies spawn
 - [ ] Audio
 	- [ ] For enemy getting damaged 
 	- [ ] For enemy ranged attack
@@ -51,7 +51,8 @@ Additional:
 	- [ ] Health
 	- [ ] Damage Bonus
 	- [ ] Movement Speed
-
+- [ ] Bugs
+	- [x] Score counter doesn't stop on death
 
 ### Funny things :D
 - [ ] Add to the player character a backpack

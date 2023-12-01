@@ -4,32 +4,50 @@ namespace Swordsss.Scripts;
 
 public partial class EnemySpawner : Node2D
 {
-    [Export] public PackedScene EnemyPrefab;
-
-    [Export] public float SpawnRate = 2.0f;
+    public double SpawnRate { get; set; }
+    public PackedScene EnemyPrefab { get; set; }
+    public float SpawnRange { get; set; }
+    public double SpawningStartTime { get; set; }
     
-    [Export] public float SpawnRange = 500.0f;
-
     private Timer _spawnTimer;
-
+    
     public override void _Ready()
     {
-        _spawnTimer = GetNode<Timer>("SpawnTimer");
-        _spawnTimer.WaitTime = 1f / SpawnRate;
-        _spawnTimer.Timeout += _OnSpawnTimerTimeout;
+        _spawnTimer = new Timer();
+        AddChild(_spawnTimer);
+        
+        _spawnTimer.WaitTime = SpawningStartTime;
+        _spawnTimer.Timeout += StartSpawning;
         _spawnTimer.Start();
+        
+        // When game ends, stop spawning
+        GameManager.Instance.OnGameEnd += () => _spawnTimer.Stop();
     }
 
-    private void _OnSpawnTimerTimeout()
+    private void StartSpawning()
+    {
+        _spawnTimer.WaitTime = 1f / SpawnRate;
+        _spawnTimer.Timeout -= StartSpawning;
+        _spawnTimer.Timeout += SpawnEnemy;
+        GD.Print($"Started spawing!");
+    }
+
+    private void SpawnEnemy()
     {
         var enemy = (Enemy)EnemyPrefab.Instantiate();
         var spawnPosition = GetSpawnPoint();
         enemy.GlobalPosition = spawnPosition;
         AddChild(enemy);
     }
-
+    
     private Vector2 GetSpawnPoint()
     {
-        return new Vector2(GD.Randf() * SpawnRange, GD.Randf() * SpawnRange);
+        var playerPosition = Player.Instance.GlobalPosition;
+        
+        return new Vector2()
+        {
+            X = playerPosition.X + (float)GD.RandRange(-1f, 1f) * SpawnRange, 
+            Y = playerPosition.Y + (float)GD.RandRange(-1f, 1f) * SpawnRange
+        };
     }
 }

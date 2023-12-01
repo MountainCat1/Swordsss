@@ -1,19 +1,40 @@
-[gd_scene load_steps=15 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=20 format=3 uid="uid://6t2hppwcvylu"]
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
 [ext_resource type="Script" path="res://Scripts/FollowingCamera.cs" id="3_042op"]
 [ext_resource type="Texture2D" uid="uid://bio6kxg81xe4q" path="res://Sprites/Background2.png" id="3_43c1t"]
-[ext_resource type="Script" path="res://Scripts/EnemySpawner.cs" id="4_i680m"]
 [ext_resource type="PackedScene" uid="uid://cmlxj3fcq10fp" path="res://Scenes/ui.tscn" id="5_dye77"]
 [ext_resource type="PackedScene" uid="uid://l7p7c1hqn5v6" path="res://Scenes/gameManager.tscn" id="6_esafv"]
 [ext_resource type="PackedScene" uid="uid://cukabpjfaes8q" path="res://Scenes/melee_enemy.tscn" id="6_t1edy"]
+[ext_resource type="Script" path="res://Scripts/GameConfiguration.cs" id="6_uw5vb"]
 [ext_resource type="PackedScene" uid="uid://cwt0os40uk8nj" path="res://Scenes/rangeEnemy.tscn" id="7_238do"]
+[ext_resource type="Script" path="res://Scripts/EnemySpawning.cs" id="7_gpv7o"]
 [ext_resource type="Script" path="res://Scripts/BloodManager.cs" id="9_0mmi0"]
 [ext_resource type="Script" path="res://Scripts/MissileContainer.cs" id="9_6xqon"]
 [ext_resource type="PackedScene" uid="uid://dv2e6ef3xc246" path="res://Scenes/blood_particale.tscn" id="10_8snx3"]
 [ext_resource type="Script" path="res://Scripts/EndGameScreenController.cs" id="13_0fk6n"]
 [ext_resource type="PackedScene" uid="uid://dtrhut5bbh2yf" path="res://Scenes/game_over_screen.tscn" id="14_li60c"]
+[ext_resource type="Script" path="res://Scripts/EnemySpawnerManager.cs" id="16_gtkyc"]
+
+[sub_resource type="Resource" id="Resource_t62li"]
+resource_name = "Spawning Config"
+script = ExtResource("7_gpv7o")
+EnemyScenePrefab = ExtResource("6_t1edy")
+TargetSpawnRate = 0.8
+SpawingStartTime = 2.0
+
+[sub_resource type="Resource" id="Resource_vjs7h"]
+resource_name = "Spawning Config"
+script = ExtResource("7_gpv7o")
+EnemyScenePrefab = ExtResource("7_238do")
+TargetSpawnRate = 0.25
+SpawingStartTime = 10.0
+
+[sub_resource type="Resource" id="Resource_b3rg8"]
+script = ExtResource("6_uw5vb")
+EnemySpawnings = [SubResource("Resource_t62li"), SubResource("Resource_vjs7h")]
+ScorePerSecond = 1.0
 
 [node name="World" type="Node2D"]
 
@@ -38,20 +59,7 @@ texture_filter = 1
 Speed = 100.0
 
 [node name="GameManager" parent="." instance=ExtResource("6_esafv")]
-
-[node name="MeleeEnemySpawner" type="Node2D" parent="."]
-script = ExtResource("4_i680m")
-EnemyPrefab = ExtResource("6_t1edy")
-SpawnRate = 0.25
-
-[node name="SpawnTimer" type="Timer" parent="MeleeEnemySpawner"]
-
-[node name="RangeEnemySpawner" type="Node2D" parent="."]
-script = ExtResource("4_i680m")
-EnemyPrefab = ExtResource("7_238do")
-SpawnRate = 0.1
-
-[node name="SpawnTimer" type="Timer" parent="RangeEnemySpawner"]
+GameConfiguration = SubResource("Resource_b3rg8")
 
 [node name="UI" parent="." instance=ExtResource("5_dye77")]
 
@@ -65,3 +73,6 @@ BloodPrefab = ExtResource("10_8snx3")
 [node name="End Game Screen Controller" type="Node" parent="."]
 script = ExtResource("13_0fk6n")
 EndGameScreen = ExtResource("14_li60c")
+
+[node name="Enemy Spawner Manger" type="Node" parent="."]
+script = ExtResource("16_gtkyc")
