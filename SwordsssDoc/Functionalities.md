@@ -47,8 +47,8 @@ Additional:
 	- [ ] Some soundtrack ( just find something free xD )
 	- [ ] Some menu soundtrack ( just find something free xD )
 	- [ ] UI button click sound
-- [ ] Some power-ups
-	- [ ] Health
+- [x] Some power-ups
+	- [x] Health
 	- [ ] Damage Bonus
 	- [ ] Movement Speed
 - [ ] Bugs

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=24 format=3 uid="uid://6t2hppwcvylu"]
 
 [ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
@@ -16,6 +16,9 @@
 [ext_resource type="Script" path="res://Scripts/EndGameScreenController.cs" id="13_0fk6n"]
 [ext_resource type="PackedScene" uid="uid://dtrhut5bbh2yf" path="res://Scenes/game_over_screen.tscn" id="14_li60c"]
 [ext_resource type="Script" path="res://Scripts/EnemySpawnerManager.cs" id="16_gtkyc"]
+[ext_resource type="Script" path="res://Scripts/PickupSpawningManager.cs" id="17_sxf5a"]
+[ext_resource type="Script" path="res://Scripts/PickupSpawningConfig.cs" id="18_bkh8y"]
+[ext_resource type="PackedScene" uid="uid://cc5ajjth6agjx" path="res://Scenes/health_pickup.tscn" id="18_e6bg8"]
 
 [sub_resource type="Resource" id="Resource_t62li"]
 resource_name = "Spawning Config"
@@ -35,6 +38,12 @@ SpawingStartTime = 10.0
 script = ExtResource("6_uw5vb")
 EnemySpawnings = [SubResource("Resource_t62li"), SubResource("Resource_vjs7h")]
 ScorePerSecond = 1.0
+
+[sub_resource type="Resource" id="Resource_g2u7b"]
+resource_name = "Pickup Config"
+script = ExtResource("18_bkh8y")
+SpawningRate = 0.15
+PickupPrefabScene = ExtResource("18_e6bg8")
 
 [node name="World" type="Node2D"]
 
@@ -76,3 +85,8 @@ EndGameScreen = ExtResource("14_li60c")
 
 [node name="Enemy Spawner Manger" type="Node" parent="."]
 script = ExtResource("16_gtkyc")
+
+[node name="Pickup Spawner Manger" type="Node" parent="."]
+script = ExtResource("17_sxf5a")
+SpawningConfigs = [SubResource("Resource_g2u7b")]
+SpawnRange = 400.0

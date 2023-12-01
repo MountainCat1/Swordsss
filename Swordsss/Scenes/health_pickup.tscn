@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc5ajjth6agjx"]
+
+[ext_resource type="Script" path="res://Scripts/HealthPickup.cs" id="1_7w34c"]
+[ext_resource type="Texture2D" uid="uid://k2gw85w6o08f" path="res://Sprites/Heart.png" id="2_d4mht"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f8h2w"]
+radius = 6.0
+
+[node name="HealthPickup" type="Area2D"]
+position = Vector2(36, -16)
+script = ExtResource("1_7w34c")
+HealingAmount = 10
+ScoreGain = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_d4mht")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_f8h2w")
