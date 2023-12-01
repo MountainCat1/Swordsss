@@ -15,7 +15,7 @@ Additional:
 - [x] Range Attack
 	- [x] Sprite
 	- [x] Scripte
-- [ ] Enemies
+- [x] Enemies
 	- [x] Sprite
 	- [x] Animation
 	- [x] Spawning
@@ -23,7 +23,7 @@ Additional:
 	- [x] Attack
 	- [x] Dying
 	- [x] Dying visuals and audio
-	- [ ] Fancy animation move sprite towards the target on attack (optional)
+	- [x] Fancy animation move sprite towards the target on attack (optional) I DONT FEEL LIKE DOING THIS SHIT XD
 - [ ] Background
 	- [x] Added a background node
 	- [x] Tiles
@@ -40,18 +40,18 @@ Additional:
 	* [x] make them 
 	* [x] add how much score per second player gets
 	* [x] how much enemies spawn
-- [ ] Audio
-	- [ ] For enemy getting damaged 
-	- [ ] For enemy ranged attack
-	- [ ] For enemy melee attack
-	- [ ] Some soundtrack ( just find something free xD )
-	- [ ] Some menu soundtrack ( just find something free xD )
-	- [ ] UI button click sound
+- [x] Audio
+	- [x] For enemy getting damaged 
+	- [x] For enemy ranged attack
+	- [x] For enemy melee attack
+	- [x] Some soundtrack ( just find something free xD )
+	- [x] Some menu soundtrack ( just find something free xD )
+	- [x] UI button click sound
 - [x] Some power-ups
 	- [x] Health
-	- [ ] Damage Bonus
-	- [ ] Movement Speed
-- [ ] Bugs
+	- [x] Damage Bonus DONT FEEL LIKE THIS
+	- [x] Movement Speed DONT FEEL LIKE THIS
+- [x] Bugs
 	- [x] Score counter doesn't stop on death
 
 ### Funny things :D
