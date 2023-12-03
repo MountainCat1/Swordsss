@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="">
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="fixed serialization of configuration">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/ui.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/ui.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export_presets.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/export_presets.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/d2/7823f3b4/CharacterBody2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/f1/1df0489b/Node2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/fb/1391b7aa/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/EnemySpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/EnemySpawnerManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -107,6 +109,7 @@
       <workItem from="1701191790017" duration="6331000" />
       <workItem from="1701450578349" duration="8399000" />
       <workItem from="1701489098493" duration="642000" />
+      <workItem from="1701619853636" duration="1333000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -316,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701459022166</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fixed serialization of configuration">
+      <option name="closed" value="true" />
+      <created>1701620224438</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701620224438</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +336,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added player movement and started working on attack functionality ️‍⚧️️‍⚧️" />
     <MESSAGE value="added attack detection " />
     <MESSAGE value="break ️" />
     <MESSAGE value="xd " />
@@ -350,6 +360,7 @@
     <MESSAGE value="Added pickups ✨" />
     <MESSAGE value="Added sounds :D " />
     <MESSAGE value="updated Functionalities.md " />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Functionalities.md " />
+    <MESSAGE value="fixed serialization of configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed serialization of configuration" />
   </component>
 </project>

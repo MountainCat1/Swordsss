@@ -31,7 +31,7 @@ Additional:
 * [x] Menu
 * [ ] UI
 	* [x] Some new font
-	* [ ] Refine UI coz its kinda shit
+	* [ ] Refine UI coz its kinda shit <----
 * [x] Score <----
 	* [x] Calculation
 	* [x] Display
