@@ -28,23 +28,23 @@
 [ext_resource type="AudioStream" uid="uid://cn8de1h56mlph" path="res://Audio/543386__thedragonsspark__nom-noise.wav" id="25_lt1gc"]
 [ext_resource type="AudioStream" uid="uid://cjvbff78hamxw" path="res://Audio/507020__mrthenoronha__gun-shot-6-8-bit.wav" id="26_6hs5m"]
 
-[sub_resource type="Resource" id="Resource_t62li"]
+[sub_resource type="Resource" id="Resource_loicd"]
 resource_name = "Spawning Config"
 script = ExtResource("7_gpv7o")
 EnemyScenePrefab = ExtResource("6_t1edy")
-TargetSpawnRate = 0.8
-SpawingStartTime = 2.0
+TargetSpawnRate = 0.5
+SpawingStartTime = 1.0
 
-[sub_resource type="Resource" id="Resource_vjs7h"]
+[sub_resource type="Resource" id="Resource_enwqt"]
 resource_name = "Spawning Config"
 script = ExtResource("7_gpv7o")
 EnemyScenePrefab = ExtResource("7_238do")
-TargetSpawnRate = 0.25
-SpawingStartTime = 10.0
+TargetSpawnRate = 0.15
+SpawingStartTime = 25.0
 
 [sub_resource type="Resource" id="Resource_b3rg8"]
 script = ExtResource("6_uw5vb")
-EnemySpawnings = [SubResource("Resource_t62li"), SubResource("Resource_vjs7h")]
+EnemySpawnings = [SubResource("Resource_loicd"), SubResource("Resource_enwqt")]
 ScorePerSecond = 1.0
 
 [sub_resource type="Resource" id="Resource_g2u7b"]

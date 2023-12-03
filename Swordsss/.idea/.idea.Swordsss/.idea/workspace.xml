@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="Added pickups 🤯✨🐲🐲🐾🐾">
-      <change afterPath="$PROJECT_DIR$/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/enemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/enemy.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/health_pickup.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/health_pickup.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/player.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Creature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Creature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Pickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Pickup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/RangedWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/RangedWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/TouchWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,27 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Executable.Player.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Executable.Player.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Mountain Cat\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Mountain Cat\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Executable.Player">
     <configuration name="Editor" type="RunExe" factoryName=".NET Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Programs/Godot_v4.1.2-stable_mono_win64/Godot_v4.1.2-stable_mono_win64.exe" />
@@ -115,7 +105,8 @@
       <workItem from="1700934324924" duration="5472000" />
       <workItem from="1701190452948" duration="114000" />
       <workItem from="1701191790017" duration="6331000" />
-      <workItem from="1701450578349" duration="8029000" />
+      <workItem from="1701450578349" duration="8399000" />
+      <workItem from="1701489098493" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -309,7 +300,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701455756809</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added sounds :D 🐲🐲🔴🐾🐾🔥🤯">
+      <option name="closed" value="true" />
+      <created>1701458822348</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1701458822348</updated>
+    </task>
+    <task id="LOCAL-00026" summary="updated Functionalities.md 🔥🔥😼😼">
+      <option name="closed" value="true" />
+      <created>1701459022166</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1701459022166</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +325,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Start again" />
     <MESSAGE value="Added player movement and started working on attack functionality ️‍⚧️️‍⚧️" />
     <MESSAGE value="added attack detection " />
     <MESSAGE value="break ️" />
@@ -342,6 +348,8 @@
     <MESSAGE value="fixed singletons on restart" />
     <MESSAGE value="added settings and spawner management " />
     <MESSAGE value="Added pickups ✨" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pickups ✨" />
+    <MESSAGE value="Added sounds :D " />
+    <MESSAGE value="updated Functionalities.md " />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Functionalities.md " />
   </component>
 </project>

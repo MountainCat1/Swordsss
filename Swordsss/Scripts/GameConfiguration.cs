@@ -6,10 +6,10 @@ using System.Linq;
 [Tool]
 public partial class GameConfiguration : Resource
 {
-    private EnemySpawning[] _enemySpawnings = Array.Empty<EnemySpawning>();
+    private Resource[] _enemySpawnings = Array.Empty<Resource>();
 
     [Export]
-    public EnemySpawning[] EnemySpawnings
+    public Resource[] EnemySpawnings
     {
         get => _enemySpawnings;
         set
