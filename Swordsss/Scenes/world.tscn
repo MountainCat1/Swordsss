@@ -1,6 +1,5 @@
-[gd_scene load_steps=32 format=3 uid="uid://6t2hppwcvylu"]
+[gd_scene load_steps=31 format=3 uid="uid://di6d51uc4v7bm"]
 
-[ext_resource type="PackedScene" uid="uid://wpw8os1335es" path="res://Scenes/singletons.tscn" id="1_kc1pn"]
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
 [ext_resource type="Script" path="res://Scripts/FollowingCamera.cs" id="3_042op"]
 [ext_resource type="Texture2D" uid="uid://bio6kxg81xe4q" path="res://Sprites/Background2.png" id="3_43c1t"]
@@ -53,9 +52,7 @@ script = ExtResource("18_bkh8y")
 SpawningRate = 0.15
 PickupPrefabScene = ExtResource("18_e6bg8")
 
-[node name="World" type="Node2D"]
-
-[node name="Singletons" parent="." instance=ExtResource("1_kc1pn")]
+[node name="World" type="Node"]
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -10

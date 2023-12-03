@@ -10,14 +10,19 @@ public partial class PlayerInput : Node2D
     public event Action OnPlayerAttack;
     public event Action OnPlayerAttackPhysics;
     public event Action<Vector2> OnPointerMoved;
+    public event Action OnPlayerPause;
 
     public Vector2 PointerPosition { get; set; }
-    
+
     public override void _Notification(int what)
     {
         base._Notification(what);
-        if(what == NotificationEnterTree)
+        if (what == NotificationEnterTree)
+        {
+            if(Instance != null)
+                GD.PrintErr("Multiple PlayerInput instances");
             Instance = this;
+        }
         if(what == NotificationExitTree)
             Instance = null;
     }
@@ -26,7 +31,10 @@ public partial class PlayerInput : Node2D
     public override void _Process(double delta)
     {
         base._Process(delta);
-
+        
+        if(Input.IsActionJustPressed(PlayerInputName.Pause))
+            OnPlayerPause?.Invoke();
+        
         var move = new Vector2();
         if (Input.IsActionPressed(PlayerInputName.MoveUp))
             move.Y -= 1;
@@ -88,4 +96,6 @@ public static class PlayerInputName
     public const string MoveDown = "move_down";
 
     public const string Attack = "attack";
+    
+    public const string Pause = "pause";
 }

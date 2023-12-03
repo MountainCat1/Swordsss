@@ -32,6 +32,9 @@ public partial class Player : Creature
 
     private void OnPlayerMove(double delta, Vector2 direction)
     {
+        if(GetTree().Paused)
+            return;
+        
         Velocity = direction * Speed;
         
         MoveAndSlide();

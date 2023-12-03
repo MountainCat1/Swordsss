@@ -38,7 +38,8 @@ public partial class GameManager : Node
         var player = Player.Instance;
         player.Health.Depleted += OnPlayerDeath;
 
-        GameStatus = GameStatus.Playing;    
+        GameStatus = GameStatus.Playing;
+
     }
     
     public override void _Notification(int what)

@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://6t2hppwcvylu"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerInput.cs" id="1_jfpa0"]
+[ext_resource type="Script" path="res://Scripts/PauseManger.cs" id="2_sqptd"]
+[ext_resource type="PackedScene" uid="uid://di6d51uc4v7bm" path="res://Scenes/world.tscn" id="3_5tl1o"]
+[ext_resource type="Theme" uid="uid://5advhirahyq1" path="res://Resources/theme.tres" id="4_y0f8w"]
+
+[node name="Game" type="Node2D"]
+
+[node name="PlayerInput" type="Node2D" parent="."]
+process_mode = 3
+script = ExtResource("1_jfpa0")
+
+[node name="PauseManger" type="Node" parent="." node_paths=PackedStringArray("WorldNode", "PauseUI")]
+process_mode = 3
+script = ExtResource("2_sqptd")
+WorldNode = NodePath("../World")
+PauseUI = NodePath("../PausedUI/HBoxContainer")
+
+[node name="World" parent="." instance=ExtResource("3_5tl1o")]
+
+[node name="PausedUI" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PausedUI"]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -235.0
+offset_top = 50.0
+offset_right = 235.0
+offset_bottom = 195.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("4_y0f8w")
+alignment = 1
+
+[node name="Label" type="Label" parent="PausedUI/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 161
+text = "Pause"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="Polished the UI - health bar">
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="added camera shake :D 🐲🐲🤖🤖😼😼🖥️💩">
+      <change afterPath="$PROJECT_DIR$/Scripts/PauseManger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/rangeEnemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/rangeEnemy.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/FollowingCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/FollowingCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/world.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/world.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/WeaponContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/f1/1df0489b/Node2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d39da081b8b5480280262cf89ad679423d1c00/fb/1391b7aa/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/EnemySpawnerManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Mountain Cat/Projects/Godot/Swordsss/Swordsss/Scripts/FollowingCamera.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Executable.Player.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Executable.Player.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Mountain Cat\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Mountain Cat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Mountain Cat\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Executable.Player">
     <configuration name="Editor" type="RunExe" factoryName=".NET Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Programs/Godot_v4.1.2-stable_mono_win64/Godot_v4.1.2-stable_mono_win64.exe" />
@@ -110,7 +114,7 @@
       <workItem from="1701191790017" duration="6331000" />
       <workItem from="1701450578349" duration="8399000" />
       <workItem from="1701489098493" duration="642000" />
-      <workItem from="1701619853636" duration="2778000" />
+      <workItem from="1701619853636" duration="5382000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -336,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701621799078</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added camera shake :D 🐲🐲🤖🤖😼😼🖥️💩">
+      <option name="closed" value="true" />
+      <created>1701623648830</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1701623648830</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +357,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="break ️" />
     <MESSAGE value="xd " />
     <MESSAGE value="xdddd ️‍⚧️️" />
     <MESSAGE value="commit xd " />
@@ -370,6 +381,7 @@
     <MESSAGE value="updated Functionalities.md " />
     <MESSAGE value="fixed serialization of configuration" />
     <MESSAGE value="Polished the UI - health bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Polished the UI - health bar" />
+    <MESSAGE value="added camera shake :D ️" />
+    <option name="LAST_COMMIT_MESSAGE" value="added camera shake :D ️" />
   </component>
 </project>

@@ -35,6 +35,9 @@ public partial class WeaponContainer : Node2D
     
     private void OnPointerMoved(Vector2 pointerGlobalPosition)
     {
+        if(GetTree().Paused)
+            return;
+        
         var direction = (pointerGlobalPosition - GlobalPosition).Normalized();
         var angle = direction.Angle();
         Rotation = angle;
