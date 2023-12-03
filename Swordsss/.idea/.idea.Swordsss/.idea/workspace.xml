@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="fixed serialization of configuration">
+    <list default="true" id="0342bbfb-bed0-4fea-ae6b-3dbfd75651bd" name="Changes" comment="Polished the UI - health bar">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Swordsss/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/ui.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/ui.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/export_presets.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/export_presets.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/rangeEnemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/rangeEnemy.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/FollowingCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/FollowingCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SwordsssDoc/Functionalities.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +110,7 @@
       <workItem from="1701191790017" duration="6331000" />
       <workItem from="1701450578349" duration="8399000" />
       <workItem from="1701489098493" duration="642000" />
-      <workItem from="1701619853636" duration="1333000" />
+      <workItem from="1701619853636" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="Start again">
       <option name="closed" value="true" />
@@ -327,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701620224438</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Polished the UI - health bar">
+      <option name="closed" value="true" />
+      <created>1701621799078</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701621799078</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +345,6 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added attack detection " />
     <MESSAGE value="break ️" />
     <MESSAGE value="xd " />
     <MESSAGE value="xdddd ️‍⚧️️" />
@@ -361,6 +369,7 @@
     <MESSAGE value="Added sounds :D " />
     <MESSAGE value="updated Functionalities.md " />
     <MESSAGE value="fixed serialization of configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed serialization of configuration" />
+    <MESSAGE value="Polished the UI - health bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Polished the UI - health bar" />
   </component>
 </project>

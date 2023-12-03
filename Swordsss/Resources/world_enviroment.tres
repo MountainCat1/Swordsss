@@ -1,0 +1,10 @@
+[gd_resource type="Environment" format=3 uid="uid://dgxxxy7s1rqmh"]
+
+[resource]
+background_mode = 3
+background_energy_multiplier = 0.5
+tonemap_white = 0.0
+fog_density = 0.092
+adjustment_brightness = 3.1
+adjustment_contrast = 2.47
+adjustment_saturation = 3.66

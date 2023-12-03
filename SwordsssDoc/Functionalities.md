@@ -24,14 +24,14 @@ Additional:
 	- [x] Dying
 	- [x] Dying visuals and audio
 	- [x] Fancy animation move sprite towards the target on attack (optional) I DONT FEEL LIKE DOING THIS SHIT XD
-- [ ] Background
+- [x] Background
 	- [x] Added a background node
 	- [x] Tiles
-	- [ ] Decorations
+	- [x] Decorations I DONT FEEL LIKE DOING THIS SHIT XD
 * [x] Menu
-* [ ] UI
+* [x] UI
 	* [x] Some new font
-	* [ ] Refine UI coz its kinda shit <----
+	* [x] Refine UI coz its kinda shit <----
 * [x] Score <----
 	* [x] Calculation
 	* [x] Display

@@ -13,6 +13,9 @@ public partial class Player : Creature
         var playerInput = PlayerInput.Instance;
         
         playerInput.OnPlayerMovePhysics += OnPlayerMove;
+        
+        Health.Damaged += () => BloodManager.Instance.PlaceBlood(GlobalPosition);
+        Health.Damaged += () => FollowingCamera.Instance.StartShake(2, 5f);
     }
 
     public override void _Notification(int what)
