@@ -35,7 +35,6 @@ Additional:
 * [x] Score <----
 	* [x] Calculation
 	* [x] Display
-* [ ] Reorganize a project so that scripts for a scene are in the same folder as said scene
 * [x] GameSettings
 	* [x] make them 
 	* [x] add how much score per second player gets
@@ -54,5 +53,8 @@ Additional:
 - [x] Bugs
 	- [x] Score counter doesn't stop on death
 
-### Funny things :D
-- [ ] Add to the player character a backpack
+### The finish :D
+* [ ] Reorganize a project so that scripts for a scene are in the same folder as said scene
+* [ ] Make the GitHub repository look *cool*
+* [ ] Add two types of enemies'
+* [ ] Refactor
