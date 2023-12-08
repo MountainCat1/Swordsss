@@ -11,15 +11,7 @@ public partial class FollowingCamera : Camera2D
     
     private float _shakeIntensity = 0f;
     private float _shakeDecay = 0.1f;
-    private readonly Random rng = new Random();
-    
-    public FollowingCamera()
-    {
-        if(Instance != null)
-            throw new Exception("Cannot create more than one instance of FollowingCamera");
-        
-        Instance = this;
-    }
+    private readonly Random _rng = new Random();
 
     public override void _Ready()
     {
@@ -28,6 +20,19 @@ public partial class FollowingCamera : Camera2D
         Target.TreeExited += () => Target = null;
     }
 
+    public override void _Notification(int what)
+    {
+        base._Notification(what);
+        if (what == NotificationEnterTree)
+        {
+            if(Instance != null)
+                throw new Exception("Cannot create more than one instance of FollowingCamera");            
+            Instance = this;
+        }
+        if(what == NotificationExitTree)
+            Instance = null;
+    }
+    
     public override void _Process(double delta)
     {
         base._Process(delta);
@@ -39,8 +44,8 @@ public partial class FollowingCamera : Camera2D
         {
             // Apply a random offset to the camera position
             Offset = new Vector2(
-                (float)(rng.NextDouble() * 2 - 1) * _shakeIntensity,
-                (float)(rng.NextDouble() * 2 - 1) * _shakeIntensity
+                (float)(_rng.NextDouble() * 2 - 1) * _shakeIntensity,
+                (float)(_rng.NextDouble() * 2 - 1) * _shakeIntensity
             );
 
             // Reduce the shake intensity over time

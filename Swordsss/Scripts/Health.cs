@@ -11,11 +11,6 @@ public interface IDamageable
 
 public interface IHealth
 {
-    public float Amount { get; set; }
-    public float Max { get; set; }
-    void DealDamage(int i);
-    void Heal(int i);
-
     #region Events
 
     event Action Changed;
@@ -23,12 +18,24 @@ public interface IHealth
     event Action Damaged;
 
     #endregion
-
+    
+    public float Amount { get; set; }
+    public float Max { get; set; }
+    void DealDamage(int i);
+    void Heal(int i);
 }
 
 [GlobalClass]
 public partial class Health : Node, IHealth
 {
+    #region Events
+
+    public event Action Changed;
+    public event Action Depleted;
+    public event Action Damaged;
+
+    #endregion
+    
     [Export] public float Amount { get; set; }
     [Export] public float Max { get; set; }
     
@@ -50,12 +57,4 @@ public partial class Health : Node, IHealth
         
         Changed?.Invoke();
     }
-
-    #region Events
-
-    public event Action Changed;
-    public event Action Depleted;
-    public event Action Damaged;
-
-    #endregion
 }

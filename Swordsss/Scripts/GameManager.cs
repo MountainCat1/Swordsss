@@ -40,7 +40,6 @@ public partial class GameManager : Node
         player.Health.Depleted += OnPlayerDeath;
 
         GameStatus = GameStatus.Playing;
-
     }
     
     public override void _Notification(int what)

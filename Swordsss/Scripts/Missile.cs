@@ -4,8 +4,6 @@ namespace Swordsss.Scripts;
 
 public partial class Missile : Area2D
 {
-    private Vector2 _direction;
-
     [Export]
     public Vector2 Direction
     {
@@ -17,7 +15,9 @@ public partial class Missile : Area2D
     [Export] public int Damage { get; set; }
     [Export] public float PushAmount { get; set; }
     [Export] public float Timeout { get; set; }
-
+    
+    private Vector2 _direction;
+    
     public override void _Ready()
     {
         base._Ready();

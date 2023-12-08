@@ -5,7 +5,11 @@ namespace Swordsss.Scripts;
 
 public partial class TouchWeapon : Weapon
 {
+    #region Events
+    
     public override event Action Attacked;
+    
+    #endregion
     
     [Export] public float Range { get; set; } = 18f;
     [Export] public int Damage { get; set; } = 1;
@@ -34,5 +38,4 @@ public partial class TouchWeapon : Weapon
 
         return true;
     }
-
 }

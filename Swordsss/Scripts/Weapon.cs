@@ -10,28 +10,35 @@ public interface IWeaponHolder
 
 public interface IWeapon
 {
-    bool CanAttack(Node2D attacker, IDamageable damageable);
-    bool Attack(IDamageable damageable);
+    #region Events
+
     event Action Attacked;
     event Action CooldownEnded;
+
+    #endregion
+    
+    bool CanAttack(Node2D attacker, IDamageable damageable);
+    bool Attack(IDamageable damageable);
 }
 
 public abstract partial class Weapon : Node2D, IWeapon
 {
-    [Export] public float AttacksPerSecond { get; set; }
-
-
-    public abstract bool CanAttack(Node2D attacker, IDamageable damageable);
-
-    public abstract bool Attack(IDamageable damageable);
+    #region Evetns
 
     public abstract event Action Attacked;
     public event Action CooldownEnded;
+
+    #endregion
     
+    [Export] public float AttacksPerSecond { get; set; }
+    
+    protected bool ReadyToAttack { private set; get; }
     
     private Timer _cooldownTimer;
-    protected bool ReadyToAttack { private set; get; }
-
+    
+    public abstract bool CanAttack(Node2D attacker, IDamageable damageable);
+    public abstract bool Attack(IDamageable damageable);
+    
     public override void _Ready()
     {
         base._Ready();

@@ -8,13 +8,15 @@ public abstract partial class Pickup : Area2D
     {
         base._Ready();
         
-        BodyEntered += body =>
+        BodyEntered += OnBodyEntered;
+    }
+
+    private void OnBodyEntered(Node2D body)
+    {
+        if (body is Player player)
         {
-            if (body is Player player)
-            {
-                OnPickedUp();
-            }
-        };
+            OnPickedUp();
+        }
     }
 
     protected virtual void OnPickedUp()

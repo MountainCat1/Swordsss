@@ -59,7 +59,6 @@ public partial class PlayerInput : Node2D
     {
         base._Process(delta);
 
-
         var move = new Vector2();
         if (Input.IsActionPressed(PlayerInputName.MoveUp))
             move.Y -= 1;
@@ -72,7 +71,6 @@ public partial class PlayerInput : Node2D
 
         move = move.Normalized();
 
-        // if (move.Length() > 0)
         OnPlayerMovePhysics?.Invoke(delta, move);
 
         if (Input.IsActionJustPressed(PlayerInputName.Attack))

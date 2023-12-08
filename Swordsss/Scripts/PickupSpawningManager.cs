@@ -29,7 +29,9 @@ public partial class PickupSpawningManager : Node
     {
         base._Ready();
 
-        foreach (var config in SpawningConfigs.Cast<PickupSpawningConfig>())
+        var spawningConfigs = SpawningConfigs.Cast<PickupSpawningConfig>();
+        
+        foreach (var config in spawningConfigs)
         {
             var timer = new Timer {WaitTime = 1f / config.SpawningRate};
             timer.Timeout += () =>

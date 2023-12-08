@@ -6,7 +6,6 @@ public partial class UI : CanvasLayer
 {
     [Export] public ProgressBar HealthBar;
     
-    
     public override void _Ready()
     {
         base._Ready();

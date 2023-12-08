@@ -26,7 +26,6 @@ public partial class WeaponContainer : Node2D
     {
         if (body is IDamageable damageable)
         {
-            // TODO: this is just a draft please change me later
             AudioManager.Play(GlobalPosition, Sounds.HitSound);
             damageable.Health.DealDamage(Damage);
         }
