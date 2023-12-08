@@ -2,7 +2,7 @@ using Godot;
 
 namespace Swordsss.Scripts;
 
-public partial class WeaponContainer : Node2D
+public partial class SwordContainer : Node2D
 {
     [Export] public float PushAmount { get; set; } = 1000f;
     [Export] public int Damage { get; set; } = 1;

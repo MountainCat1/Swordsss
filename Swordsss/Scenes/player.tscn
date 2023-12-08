@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_nim0h"]
 [ext_resource type="SpriteFrames" uid="uid://o10e00fe2428" path="res://Sprites/player.tres" id="2_m6m6m"]
-[ext_resource type="Script" path="res://Scripts/WeaponContainer.cs" id="3_5phc5"]
+[ext_resource type="Script" path="res://Scripts/SwordContainer.cs" id="4_acpd6"]
 [ext_resource type="Texture2D" uid="uid://dvcpmhsu5vy6t" path="res://Sprites/Sword.png" id="4_o1y2c"]
 [ext_resource type="Script" path="res://Scripts/Health.cs" id="5_a4lrl"]
 [ext_resource type="Texture2D" uid="uid://8xyohhqrfgvy" path="res://Sprites/Shadow.png" id="6_v3y0c"]
@@ -28,7 +28,7 @@ animation = &"walk"
 autoplay = "walk"
 
 [node name="WeaponContainer" type="Node2D" parent="."]
-script = ExtResource("3_5phc5")
+script = ExtResource("4_acpd6")
 PushAmount = 250.0
 
 [node name="Area2D" type="Area2D" parent="WeaponContainer"]
