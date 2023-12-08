@@ -9,7 +9,9 @@ Simple Godot Game
 
 
 
+Special Thanks to:
 
+* Lothar Schulten - he asked to be put here xD
 
 
 
