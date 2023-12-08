@@ -1,5 +1,6 @@
 using Godot;
-using System;
+
+namespace Swordsss.Scenes;
 
 public partial class GameOverScreen : Control
 {
@@ -10,7 +11,7 @@ public partial class GameOverScreen : Control
     {
         base._Ready();
         
-        ExitButton.Pressed += () => GameManager.Instance.Quit();
-        RestartButton.Pressed += GameManager.Instance.Restart;
+        ExitButton.Pressed += () => Scripts.GameManager.Instance.Quit();
+        RestartButton.Pressed += Scripts.GameManager.Instance.Restart;
     }
 }

@@ -57,4 +57,4 @@ Additional:
 * [ ] Reorganize a project so that scripts for a scene are in the same folder as said scene
 * [ ] Make the GitHub repository look *cool*
 * [ ] Add two types of enemies'
-* [ ] Refactor
+* [ ] Refactor <---

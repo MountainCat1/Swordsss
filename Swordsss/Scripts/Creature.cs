@@ -5,13 +5,14 @@ namespace Swordsss.Scripts;
 
 public partial class Creature : CharacterBody2D, IDamageable
 {
+    #region Events
     public event Action OnKilled;
-    
-    
-    public IHealth Health { get; private set; }
+
+    #endregion
     
     [Export] public float Speed { get; set; }
-
+    
+    public IHealth Health { get; private set; }
     protected Vector2 Momentum { get; set; }
     
     protected AnimatedSprite2D AnimatedSprite2D { get; private set; }

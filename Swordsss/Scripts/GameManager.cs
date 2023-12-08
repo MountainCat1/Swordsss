@@ -1,7 +1,8 @@
-using Godot;
 using System;
-using System.Threading;
+using Godot;
 using Timer = Godot.Timer;
+
+namespace Swordsss.Scripts;
 
 public enum GameStatus
 {

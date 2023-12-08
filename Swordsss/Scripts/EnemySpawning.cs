@@ -1,5 +1,7 @@
 ﻿using Godot;
 
+namespace Swordsss.Scripts;
+
 public partial class EnemySpawning : Resource
 {
     [Export] public PackedScene EnemyScenePrefab { get; set; }

@@ -1,5 +1,6 @@
 using Godot;
-using System;
+
+namespace Swordsss.Scripts;
 
 public partial class EndGameScreenController : Node
 {

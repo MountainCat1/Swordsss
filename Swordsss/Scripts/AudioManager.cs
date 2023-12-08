@@ -1,5 +1,7 @@
-using Godot;
 using System;
+using Godot;
+
+namespace Swordsss.Scripts;
 
 public enum Sounds
 {

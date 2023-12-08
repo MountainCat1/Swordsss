@@ -66,6 +66,9 @@ public partial class Enemy : Creature, IWeaponHolder
         MoveAndSlide();
     }
 
+    /// <summary>
+    /// Decision making for the enemy.
+    /// </summary>
     private void AI()
     {
         var player = GetPlayer();

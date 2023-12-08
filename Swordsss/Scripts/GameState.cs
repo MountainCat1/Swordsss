@@ -1,6 +1,8 @@
 ﻿using System;
 using Godot;
 
+namespace Swordsss.Scripts;
+
 public partial class GameState : Node
 {
     public event Action OnScoreChanged;

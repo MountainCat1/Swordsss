@@ -1,6 +1,8 @@
-using Godot;
 using System;
 using System.Linq;
+using Godot;
+
+namespace Swordsss.Scripts;
 
 [GlobalClass]
 [Tool]

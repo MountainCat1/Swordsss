@@ -1,6 +1,6 @@
 using Godot;
-using System;
-using Swordsss.Scripts;
+
+namespace Swordsss.Scripts;
 
 public partial class Player : Creature
 {

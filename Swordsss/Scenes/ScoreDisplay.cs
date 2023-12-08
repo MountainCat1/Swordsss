@@ -1,17 +1,18 @@
 using Godot;
-using System;
+
+namespace Swordsss.Scenes;
 
 public partial class ScoreDisplay : Label
 {
     public override void _Ready()
     {
         base._Ready();
-        GameManager.Instance.GameState.OnScoreChanged += OnScoreChanged;
+        Scripts.GameManager.Instance.GameState.OnScoreChanged += OnScoreChanged;
         OnScoreChanged();
     }
 
     private void OnScoreChanged()
     {
-        Text = "Score: " + GameManager.Instance.GameState.Score.ToString("F1");
+        Text = "Score: " + Scripts.GameManager.Instance.GameState.Score.ToString("F1");
     }
 }
