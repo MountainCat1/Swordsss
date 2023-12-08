@@ -18,6 +18,7 @@ Timeout = 5.0
 shape = SubResource("CircleShape2D_i8vbe")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 2
 texture = ExtResource("2_apwsf")
 
 [node name="TimeoutTimer" type="Timer" parent="."]

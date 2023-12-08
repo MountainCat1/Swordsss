@@ -30,6 +30,8 @@ autoplay = "walk"
 [node name="WeaponContainer" type="Node2D" parent="."]
 script = ExtResource("4_acpd6")
 PushAmount = 250.0
+SwordSpeed = 15.0
+SwordPerTime = 0.7
 
 [node name="Area2D" type="Area2D" parent="WeaponContainer"]
 

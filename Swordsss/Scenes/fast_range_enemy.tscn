@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwholciumna63"]
+
+[ext_resource type="PackedScene" uid="uid://up5etfbd0jtv" path="res://Scenes/enemy.tscn" id="1_qaf3e"]
+[ext_resource type="SpriteFrames" uid="uid://bj0w1nkaxx3" path="res://Resources/range_enemy_sprite_frames.tres" id="2_1l3l5"]
+[ext_resource type="Script" path="res://Scripts/RangedWeapon.cs" id="3_n8t1y"]
+[ext_resource type="PackedScene" uid="uid://c0pbluue5t0ft" path="res://Scenes/missile.tscn" id="4_u1m0x"]
+
+[node name="Enemy" instance=ExtResource("1_qaf3e")]
+scale = Vector2(0.7, 0.7)
+
+[node name="AnimatedSprite2D" parent="." index="2"]
+sprite_frames = ExtResource("2_1l3l5")
+
+[node name="Health" parent="." index="4"]
+Amount = 4.0
+Max = 4.0
+
+[node name="Weapon" type="Node2D" parent="." index="6"]
+script = ExtResource("3_n8t1y")
+MissilePrefab = ExtResource("4_u1m0x")
+Damage = 1
+MissileSpeed = 110.0
+Range = 80.0
+AttacksPerSecond = 2.5
+
+[node name="CooldownTimer" type="Timer" parent="Weapon" index="0"]

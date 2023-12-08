@@ -54,7 +54,7 @@ Additional:
 	- [x] Score counter doesn't stop on death
 
 ### The finish :D
-* [ ] Reorganize a project so that scripts for a scene are in the same folder as said scene
+* [x] Reorganize a project so that scripts for a scene are in the same folder as said scene - FUCK IT
 * [ ] Make the GitHub repository look *cool*
-* [ ] Add two types of enemies'
-* [ ] Refactor <---
+* [x] Add two types of enemies' <---
+* [x] Refactor

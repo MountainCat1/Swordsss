@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn1uovo14rnpw"]
+
+[ext_resource type="PackedScene" uid="uid://up5etfbd0jtv" path="res://Scenes/enemy.tscn" id="1_ffdme"]
+[ext_resource type="Script" path="res://Scripts/TouchWeapon.cs" id="2_4oi7n"]
+
+[node name="Enemy" instance=ExtResource("1_ffdme")]
+Speed = 65.0
+
+[node name="Shadow" parent="." index="0"]
+position = Vector2(0, 0)
+scale = Vector2(1.5, 1.5)
+
+[node name="AnimatedSprite2D" parent="." index="2"]
+scale = Vector2(1.5, 1.5)
+animation = &"walk"
+frame_progress = 0.433841
+
+[node name="Control" parent="." index="3"]
+offset_left = -59.0
+offset_top = -39.0
+offset_right = 57.0
+offset_bottom = 18.0
+
+[node name="ProgressBar" parent="Control" index="0"]
+offset_left = -11.0
+offset_top = -1.5
+offset_right = 13.0
+offset_bottom = 0.5
+
+[node name="Health" parent="." index="4"]
+Amount = 20.0
+Max = 20.0
+
+[node name="Weapon" type="Node2D" parent="." index="6"]
+script = ExtResource("2_4oi7n")
+AttacksPerSecond = 1.0
+
+[node name="CooldownTimer" type="Timer" parent="Weapon" index="0"]

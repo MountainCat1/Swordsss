@@ -37,6 +37,7 @@ public partial class RangedWeapon : Weapon
         missile.Speed = MissileSpeed;
         missile.Damage = Damage;
         missile.PushAmount = PushAmount;
+        missile.Scale = new Vector2(0.5f * Mathf.Sqrt(Damage), 0.5f * Mathf.Sqrt(Damage));
 
         Attacked?.Invoke();
 

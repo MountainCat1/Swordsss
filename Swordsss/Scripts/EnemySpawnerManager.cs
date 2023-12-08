@@ -5,8 +5,6 @@ namespace Swordsss.Scripts;
 
 public partial class EnemySpawnerManager : Node
 {
-    [Export] public PackedScene EnemySpawnerPrefab;
-
     public override void _Ready()
     {
         base._Ready();

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://di6d51uc4v7bm"]
+[gd_scene load_steps=35 format=3 uid="uid://di6d51uc4v7bm"]
 
 [ext_resource type="PackedScene" uid="uid://8xxfm4y6ir8k" path="res://Scenes/player.tscn" id="2_dtkjc"]
 [ext_resource type="Script" path="res://Scripts/FollowingCamera.cs" id="3_042op"]
@@ -9,8 +9,10 @@
 [ext_resource type="Script" path="res://Scripts/GameConfiguration.cs" id="6_uw5vb"]
 [ext_resource type="PackedScene" uid="uid://cwt0os40uk8nj" path="res://Scenes/rangeEnemy.tscn" id="7_238do"]
 [ext_resource type="Script" path="res://Scripts/EnemySpawning.cs" id="7_gpv7o"]
+[ext_resource type="PackedScene" uid="uid://bn1uovo14rnpw" path="res://Scenes/enemy_tank.tscn" id="8_ci7gg"]
 [ext_resource type="Script" path="res://Scripts/BloodManager.cs" id="9_0mmi0"]
 [ext_resource type="Script" path="res://Scripts/MissileContainer.cs" id="9_6xqon"]
+[ext_resource type="PackedScene" uid="uid://cwholciumna63" path="res://Scenes/fast_range_enemy.tscn" id="9_jc100"]
 [ext_resource type="PackedScene" uid="uid://dv2e6ef3xc246" path="res://Scenes/blood_particale.tscn" id="10_8snx3"]
 [ext_resource type="Script" path="res://Scripts/EndGameScreenController.cs" id="13_0fk6n"]
 [ext_resource type="PackedScene" uid="uid://dtrhut5bbh2yf" path="res://Scenes/game_over_screen.tscn" id="14_li60c"]
@@ -38,12 +40,26 @@ SpawingStartTime = 1.0
 resource_name = "Spawning Config"
 script = ExtResource("7_gpv7o")
 EnemyScenePrefab = ExtResource("7_238do")
-TargetSpawnRate = 0.15
+TargetSpawnRate = 0.08
 SpawingStartTime = 25.0
+
+[sub_resource type="Resource" id="Resource_k3xee"]
+resource_name = "Spawning Config"
+script = ExtResource("7_gpv7o")
+EnemyScenePrefab = ExtResource("8_ci7gg")
+TargetSpawnRate = 0.08
+SpawingStartTime = 60.0
+
+[sub_resource type="Resource" id="Resource_hatkd"]
+resource_name = "Spawning Config"
+script = ExtResource("7_gpv7o")
+EnemyScenePrefab = ExtResource("9_jc100")
+TargetSpawnRate = 0.04
+SpawingStartTime = 100.0
 
 [sub_resource type="Resource" id="Resource_b3rg8"]
 script = ExtResource("6_uw5vb")
-EnemySpawnings = [SubResource("Resource_loicd"), SubResource("Resource_enwqt")]
+EnemySpawnings = [SubResource("Resource_loicd"), SubResource("Resource_enwqt"), SubResource("Resource_k3xee"), SubResource("Resource_hatkd")]
 ScorePerSecond = 1.0
 
 [sub_resource type="Resource" id="Resource_g2u7b"]
